@@ -1,0 +1,55 @@
+
+JDK : A software development kit used to develop java applications.
+      JDK = JRE + Dev Tools (like Compiler, Debugger, etc.)
+      Tools name : javac, java, javadoc, jdb, jar, javap, etc.
+
+JRE : A package that provides environment to run java program.
+      JRE = JVM + Core Libraries and classes + Deployment Technologies
+      We can run a Java program with JRE, but we can't develop or compile Java code with it.
+
+JVM : Convert byte code into machine code for our system.
+      "Write Once, Run Anywhere"
+      Each OS has its own JVM implementation ,but it runs platform independent bytecode.
+
+javac : Is the compiler to compile .java file into .class file.
+        Ex : javac file_name.java
+
+java : Is the java launcher for executing .class file.
+       Ex : java file_name
+
+
+[] Skeleton of Java Program :
+class Class_name{
+    public static void main(String[] args){
+        System.out.println("Hello World!");
+    }
+}
+
+Main method must be static public.
+Main method should not be return anything.
+In main method formal argument compulsory but actual argument not compulsory.
+
+[] Important :
+-> java.lang.* package automatically imported in our program.
+-> when one class is public in a file then file name should be same as public class name.
+-> If we execute one class which has not main method then we will get Runtime Exception as "main method not found in class Class_name".
+
+[] Read data from keyboard with Scanner Class :
+-> Scanner class is use to take input of varies type of data.
+-> Scanner class available in java.util package.
+-> Methods :
+            nextInt()
+            nextFloat()
+            nextDouble()
+            next()
+            nextLine()
+            nextByte()
+            nextShort()
+            nextLong()
+            nextBoolean()
+            hasNextInt()
+            hasNextFloat()
+
+-> When Scanner class is not imported then compile time error "Cannot find Symbol".
+-> When we are providing Unexpected input then it will show RE : "Input Mismatch Exception".
+
