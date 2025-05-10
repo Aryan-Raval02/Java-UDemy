@@ -1,6 +1,6 @@
 // java.lang.* package automatically imported in our program
 
-//when one class is public then file name should be same as public class name.
+//when one class is public in a file then file name should be same as public class name.
 //otherwise Compile time error.
 public class First {
     public static void main(String[] args){
