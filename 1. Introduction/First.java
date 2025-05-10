@@ -15,7 +15,7 @@ class Second2{
 
 //when we run Second2 class without main method then we will get runtime exception "Main method not Found"
 class Second3 {
-    public static void main(String args){
+    public static void main(String[] args){
         System.out.println("Hello World3");
     }
 }

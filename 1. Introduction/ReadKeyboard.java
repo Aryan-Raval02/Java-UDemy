@@ -18,14 +18,14 @@ public class ReadKeyboard {
 //        float f = sc.nextFloat();
 //        System.out.println();
 
-//        // Sum of two Number Program
-//        System.out.print("Enter First Number : ");
-//        int n1 = sc.nextInt();
-//        System.out.println("Enter Second Number : ");
-//        int n2 = sc.nextInt();
-//
-//        int sum = n1 + n2;
-//        System.out.println("Sum of "+n1+" and "+n2+" is "+sum);
+        // Sum of two Number Program
+        System.out.print("Enter First Number : ");
+        int n1 = sc.nextInt();
+        System.out.println("Enter Second Number : ");
+        int n2 = sc.nextInt();
+
+        int sum = n1 + n2;
+        System.out.println("Sum of "+n1+" and "+n2+" is "+sum);
 
 
 
