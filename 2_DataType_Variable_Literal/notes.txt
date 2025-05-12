@@ -32,3 +32,8 @@ Rule :
 -> Space does not Allow
 
 [] Literals :
+
+byte,short,int -> has integral Literal
+long -> L or l
+float -> F or f
+double -> D or d
