@@ -1,0 +1,22 @@
+[] Compiler Vs Interpreter
+
+[] How java is platform independent ?
+
+[] Architecture of JVM ?
+
+-> Class Loader
+    1. Loading
+    2. Linking
+    3. Initialisation
+->JVM Memory
+    1. Method Area
+    2. Heap Area
+    3. Stack
+    4. PC Registers
+    5. Native Method Stack
+-> Executer Engine
+    1. Interpreter
+    2. JIT Compiler
+    3. Garbage Collector
+-> Native Method Interface
+-> Native Method Library
