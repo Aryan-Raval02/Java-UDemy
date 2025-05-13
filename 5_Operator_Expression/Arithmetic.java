@@ -65,3 +65,15 @@ class QuadraticEquation
         System.out.println("R1 : "+r1+"..R2 : "+r2);
     }
 }
+class BitWiseDemo
+{
+    public static void Masking()
+    {
+        byte c;
+        c = (byte) (9<<4);
+        c = (byte) (c|12);
+
+        System.out.println((c&0b11110000)>>4);
+        System.out.println((c&0b00001111));
+    }
+}
