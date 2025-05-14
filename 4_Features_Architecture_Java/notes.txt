@@ -1,6 +1,23 @@
 [] Compiler Vs Interpreter
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Feature             | Compiler                                                        | Interpreter                                |
+| ------------------- | --------------------------------------------------------------- | -------------------------------------------------- |
+| Definition          | Translates the entire Java source code into bytecode in one go. | Executes Java bytecode line-by-line at runtime.    |
+| Component Name      | `javac` (Java Compiler)                                         | JVM (Java Virtual Machine) with Interpreter engine |
+| Input               | Java Source Code (`.java` file)                                 | Java Bytecode (`.class` file)                      |
+| Output              | Bytecode (`.class` file)                                        | Machine code (during runtime)                      |
+| Execution Time      | Faster after compilation (bytecode is ready)                    | Slower due to line-by-line execution               |
+| Error Detection     | Detects all syntax and semantic errors before execution         | Detects runtime errors during execution            |
+| Usage Phase         | Compilation phase                                               | Execution phase                                    |
+| Platform Dependency | Platform-independent bytecode is generated                      | JVM interprets bytecode for specific platforms     |
+| Speed               | Compilation is slower than interpretation                       | Interpretation is slower during execution          |
+| Memory Usage        | Requires more memory for storing bytecode                       | Less memory as it interprets line-by-line          |
+| Debugging           | Harder, since code is compiled before running                   | Easier, as execution happens line-by-line          |
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 [] How java is platform independent ?
+
+
 
 [] Architecture of JVM ?
 
