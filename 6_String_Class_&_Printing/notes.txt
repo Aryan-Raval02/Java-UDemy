@@ -1,0 +1,40 @@
+~> print() and println() :
+
+Both are accept any data type argument beacuse it is overlaoded.
+System.out.print() is not create new line.
+System.out.println() is create new line.
+
+~> printf() || format():
+
+This method is used to print formated output like c.
+-> Format Specifier :
+    %[argument_index$][flags][width][.precision]conversion
+
+    argument index - 1$ , 2$ , 3$ ...
+    flag '-' , '+' , '0' , '' , '('
+    conversion -
+    char    c
+    int     d,o,x //d-decimal   o-octal   x-hexadecimal
+    float   f,e,g //f-six digit precision   e-scientific represtation   g-four digit precison
+    String  s
+
+    note : if we are using argument index then use argument index in all formatters otherwise we will get error.
+
+
+
+~> String :
+    String is a built in class in java.
+    String is a collection of characters.
+
+    (Class Name)    (pool)
+    String str = "Java Program" 
+       (Reference) (String Object)
+
+                (heap)
+    String str = new String(new char[]{'A','B','C','D'}); // Constructor String(char[])
+    String str = new String(new byte[]{65,66,67,68});     // Constructor String(byte[]) 
+                                (pool)
+    String str = new String("Java Program)                // Constructor String(String)
+
+    Notes : If we are using same string literal then jvm not create new it use exists literal.
+            If we are using new keyword to create string then it creates one reference in heap memory and cretae passed string value it create new literal if not exists.
