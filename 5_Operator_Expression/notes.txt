@@ -89,6 +89,21 @@ step 3 :
     a^b = 0101
     then a becomes 5
 
+
 ~> Merging : Merge two value of integer into one variable through Bits. 
 
 ~> Masking : Unmerge value to get number through bits.
+
+
+~> Widening  : convert smaller data type value or variable to bigger data type is called widening, implicit, Upward Casting.
+
+~> Narrowing : convert Bigger data type value or variable to Smaller data type is called Narrowing, Explicit, Downward Casting.
+
+
+                              Widening
+                     ----------------------------->
+
+    byte   -->    short / char   -->   int   -->   long   -->   float   -->   double 
+
+                     <-----------------------------
+                              Narrowing
