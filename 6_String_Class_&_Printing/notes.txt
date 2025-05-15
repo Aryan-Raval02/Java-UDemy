@@ -38,3 +38,21 @@ This method is used to print formated output like c.
 
     Notes : If we are using same string literal then jvm not create new it use exists literal.
             If we are using new keyword to create string then it creates one reference in heap memory and cretae passed string value it create new literal if not exists.
+
+~> String Method :
+    int length()
+    string toLowerCase()
+    string toUpperCase() 
+    string trim() : remove leading and trailing spaces from string
+    string subString(int begin) : it gives a part of string from begin index
+    string subString(int begin, int end) : it gives a part of string from begin to end index
+    string replace(old char, new char) : replace chracters from string
+    boolean startsWith(String s) : it compare string to starting of string if match then return true
+    boolean endsWith(String s) : it compare string to ending of string if match then return true
+    char charAt(int index) : it return character from string correspond to index
+    int indexOf(String s) : it returns first index of given string from string
+    int lastIndexOf(String s) : it returns last index of given string from string
+    boolean equals(String s) : it compare (not ignore case) two strings. If two strings are same then returns true
+    boolean equalIgnoreCase(String s) : it compare two strings with ignore case. if two strings are same then returns true
+    int compareTo(String s) : if first string is bigger then returns 1 or if first string is smaller then return -1. based on ASCII
+    String valueOf(int i) :
