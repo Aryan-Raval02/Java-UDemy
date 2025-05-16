@@ -56,3 +56,34 @@ This method is used to print formated output like c.
     boolean equalIgnoreCase(String s) : it compare two strings with ignore case. if two strings are same then returns true
     int compareTo(String s) : if first string is bigger then returns 1 or if first string is smaller then return -1. based on ASCII
     String valueOf(int i) :
+
+
+~> Regular Expression :
+    It compare string to expression. if valid then return true.
+    
+    syntax :
+    str1.matches(String regex) boolean
+
+    Symbols for definig Regular Expression :
+    .       - Any character
+    [abc]   - Exactly given letters
+    [abc][vz] - Either first or second Set
+    [^abc]  - Except a b c
+    [a-z1-7]- a-z or 1-7
+    A|B     - A or b
+    XZ      - Exactly XZ
+
+    \d      - Digits
+    \D      - Not Digits
+    \s      - space
+    \S      - Not Space
+    \w      - Alphabets or digit
+    \W      - Neither alphabet or digit
+
+
+~> Quantifiers :
+    *       - 0 or more time
+    +       - One or more
+    ?       - 0 or 1 time
+    {X}     - X times
+    {X,Y}   - Between X and Y time
