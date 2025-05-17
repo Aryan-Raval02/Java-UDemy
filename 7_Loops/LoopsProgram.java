@@ -18,6 +18,13 @@ public class LoopsProgram{
         palindrome(123);
         digitToWord(1700);
 
+        seriesAP(); // Arithmetic progression : a a+d a+2d a+3d ...   
+        seriesGP(); // Geometric progression : a a*d a*d*d a*d*d*d ...
+        seriesFibonacci();
+        
+        pattern1(5);
+        pattern2(5);
+        pattern3(5);
     }
 
     public static void multiplicationTable(){
@@ -151,4 +158,116 @@ public class LoopsProgram{
         }
         System.out.println();
     }
+
+    public static void seriesAP(){ //Arithmetic Progression : a a+d a+2d a+3d ...
+        System.out.println("--------------------------------");
+        System.out.print("Enter Starting Number : ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter Common differnece : ");
+        int d = sc.nextInt();
+
+        System.out.print("Enter Number Of Terms : ");
+        int n = sc.nextInt();
+
+        for(int i=1 ; i<=n ; i++){
+            System.out.print(a+" ");
+            a = a+d;
+        }
+        System.out.println();
+    }
+
+    public static void seriesGP(){ //Geometric Progression : a ad ad*d ad*d*d ...
+        System.out.println("--------------------------------");
+        System.out.print("Enter Starting Number : ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter Common Ratio : ");
+        int d = sc.nextInt();
+
+        System.out.print("Enter Number Of Terms : ");
+        int n = sc.nextInt();
+
+        for(int i=1 ; i<=n ; i++){
+            System.out.print(a+" ");
+            a = a*d;
+        }
+        System.out.println();
+    }
+
+    public static void seriesFibonacci(){
+        System.out.println("--------------------------------");
+        int a=0,b=1,c;
+
+        System.out.print("Enter Number Of Terms : ");
+        int n = sc.nextInt();
+
+        for(int i=1 ; i<=n ; i++){
+            System.out.print(a+" ");
+            c=a+b;
+            a=b;
+            b=c;
+        }
+        System.out.println();
+    }
+
+    public static void pattern1(int n){
+        System.out.println("---------------------------------");
+        // for(int i=1 ; i<=n ; i++){
+        //     for(int s=n ; s>n+1-i ; s--){
+        //         System.out.print("  ");
+        //     }
+        //     for(int j=i ; j<=n ; j++){
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
+        for(int i=1 ; i<=n ; i++){
+            for(int j=1 ; j<=n ; j++){
+                if (i<=j) {
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern2(int n){
+        System.out.println("----------------------------------");
+
+        for(int i=1 ; i<=n ; i++){
+            for(int j=n ; j>=1 ; j--){
+                if(i<j){
+                    System.out.print("  ");
+                }else{
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern3(int n){
+        System.out.println("----------------------------------");
+
+        for(int i=1 ; i<=n ; i++){
+            for(int j=n ; j>=1 ; j--){
+                if(i<j){
+                    System.out.print("  ");
+                }else{
+                    System.out.print("* ");
+                }
+            }
+            for(int k=1 ; k<n ; k++){
+                if (i<=k) {
+                    System.out.print("  ");
+                }else{
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
+    } 
 }

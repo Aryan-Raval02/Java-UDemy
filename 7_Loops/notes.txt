@@ -28,3 +28,5 @@ Loops :
     for(initialisation;condition;increment/decrement){
         //statements
     }
+
+~> Nested Loop : loop inside loop
