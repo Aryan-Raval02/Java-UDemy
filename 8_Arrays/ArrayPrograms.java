@@ -11,6 +11,7 @@ public class ArrayPrograms {
         findSecondLargestInArray(new int[]{-11,-56,-34,-2,0});
         rotateArrayToLeft(new int[]{1,2,3,4,5,6,7,8,9,0});
         rotateArrayToRight(new int[]{1,2,3,4,5,6,7,8,9,0});
+
     }
 
     public static void sumOfArrayElemenats(int[] nums){
