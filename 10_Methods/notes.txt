@@ -1,0 +1,24 @@
+~> What are Methods ?
+    Methods are blocks of code that perform a specific task.
+
+~> How to write a Method ?
+
+    returnType methodName(parameter List){
+        //block of code
+    }
+
+~> Parameter Passing :
+
+    actual argument is that are passed to method.
+    formal argument is that are used by method.content of variables are  copy into formal argument.
+    when object is passed then reference of object is passed and we modify reference objrct then actual data has modified.
+
+~> Method Return Types : 
+    Any primitve datatype
+    void
+
+
+~> Method Overloading :
+
+
+~> varargs :
