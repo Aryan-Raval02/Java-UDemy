@@ -1,5 +1,5 @@
 ~> What is an array ?
-    Array is a indexed collection of same data type value in single unit (variable).
+    Array is a indexed collection of same data type values in single unit (variable).
 
 ~> How to create and Access ?
     Syntax :
@@ -24,3 +24,17 @@
     for(datatype var : array){ // only forward direction
         sop(var);              // we can not chnage value using foreach loop
     }
+
+Notes : Once we create an array after we cannot chnage its size.
+        We can use this feature in ArrayList
+
+
+~> 2-D Array :  tabular form, matrix form
+                Arrays of array.
+                
+    Syntax : int A[][] = new int[3][4];
+             int A[][] = {{1,2,3,4},{2,4,6,8},{3,5,7,9}};
+
+    Array is object so it create in Heap-memory.
+
+    int[][] array = {{1,2},{1,2,3,4},{1,2,3}}; //This type array called jagged array
