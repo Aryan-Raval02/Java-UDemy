@@ -4,7 +4,7 @@
 Welcome to my java learning repository!
 This is where I documnet my progress, preactice concepts.
 
-## What Ypu Will Find Here
+## What You Will Find Here
   - Core Concepts
       - JDK, JRE, JVM, javac, java(launcher)
       - DataType, Variable, Literals
