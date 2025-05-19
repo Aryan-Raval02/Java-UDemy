@@ -17,4 +17,4 @@ This is where I documnet my progress, preactice concepts.
       - Methods
       - Object Oriented Programming
 
-## **Advanced Topics**
+**Advanced Topics**
