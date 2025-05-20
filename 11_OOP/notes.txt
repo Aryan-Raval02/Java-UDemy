@@ -21,3 +21,27 @@
 
 
 ~> Class and Object in Java
+
+
+~> Data Hiding : means restrict access to class members using access modifiers (private).
+                 protect internal data from unauthorised access and modification
+
+    Private member cannot access outside class. we can acces private member to its class public methods
+
+
+~> Type of Proprties :
+    Read & Writable
+    Read only
+    Write Only
+
+~> Constructor :
+    Constructor is special function to call itself when object is created.
+    Constructor has same name as class name.
+    Constructor is used to initialise properties of class.
+    we can overload constructor.
+    Constructor has no return type.
+    by default, one constructor is provided by compiler.
+
+    Two types :
+    Default Constructor
+    Parameterized Constructor
