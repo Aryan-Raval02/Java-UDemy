@@ -1,0 +1,47 @@
+~> What is Interface ?
+    Interfcae is used to define blueprint for classes.
+    purpose of interface is polymorphism
+
+    'interfcae' keyword is used to create Interface.
+
+    interfcae contains :
+    Abstract Method
+    Default Method
+    Static Methods
+    Constants
+
+    java does not support mu;tiple classes.
+    Interface allow you to define what a class must do.
+
+~> Multiple Inheritance Vs Interface
+
+
+
+~> Example of Interface
+
+    interface Animal {
+        void eat(); // abstract method
+        default void sleep() {
+        System.out.println("Sleeping...");
+        }   
+    }
+
+    class Dog implements Animal {
+        public void eat() {
+            System.out.println("Dog eats food.");
+        }
+    }
+
+~> Do's and Don'ts Interface :
+    All methods in an interface are implicitly public and abstract (except static and default).
+    Variables in interfaces are implicitly public, static, and final.
+    You cannot create an instance of an interface.
+    You can create only reference of interface.
+    Interface implements to class not extends.
+    Compulsory override all method from interface to class.
+    interfcae extends other interface.
+    we can access static properties of interface through interface name.
+    default method is not neccessary to override but we can override.
+    we can define privste method but cant call it from outside.
+
+~> Callback Method:
