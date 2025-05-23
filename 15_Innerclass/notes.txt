@@ -1,0 +1,109 @@
+~> Inner Class :
+    An Inner Class in Java is a class defined within another class.
+
+~> Nested Inner Class :
+    A Nested Inner Class is simply an inner class that is defined within another class.
+    Can access all members of the outer class, including private ones.
+    Requires an instance of the outer class to be created.
+    Outer class can not access properties of inner class directly. we can access it through object of inner class.
+    Inner class access properties of Outer class bacause inner class belong to Outer Class.
+
+    Ex :
+    class Outer {
+    private int x = 20;
+
+        class Inner {
+            void display() {
+                System.out.println("Member inner class: x = " + x);
+            }
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Outer outer = new Outer();
+            Outer.Inner inner = outer.new Inner(); // Requires outer instance
+            inner.display();
+        }
+    }
+
+
+~> Local Inner Class :
+    Local class is that class which define into a method locally.
+
+    Key Points :
+        It cannot be declared with access modifiers (public, private, etc.).
+
+    Ex :
+    
+    class Outer {
+        void outerMethod() {
+            int number = 100; // effectively final
+
+            class LocalInner {
+                void display() {
+                    System.out.println("Number from outer method: " + number);
+                }
+            }
+
+            LocalInner inner = new LocalInner();
+            inner.display();
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Outer outer = new Outer();
+            outer.outerMethod();
+        }
+    }
+
+~> Anonymous Inner Class :
+    An Anonymous Inner Class is a class without a name that is declared and instantiated in a single expression. It’s commonly used to override methods of a class or interface for one-time use.
+
+    Key :
+        No explicit class name.
+        Cannot have a constructor.
+        Can extend a class or implement an interface.
+        Defined inside a method, often as an argument to a method.
+
+    Ex :
+
+    abstract class Animal {
+        abstract void makeSound();
+    }
+    
+    public class Main {
+        public static void main(String[] args) {
+            Animal dog = new Animal() {
+                void makeSound() {
+                    System.out.println("Woof!");
+                }
+            };
+            dog.makeSound();
+        }
+    }
+
+~> Static Inner Class : 
+    Defined with the static keyword inside another class.
+    Can only access static members of the outer class directly.
+    Does not require an instance of the outer class to be created.
+
+    Ex :
+
+    class Outer {
+        static int x = 10;
+
+        static class Nested {
+            void display() {
+                System.out.println("Static nested class: x = " + x);
+            }
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Outer.Nested obj = new Outer.Nested(); // No need to create Outer instance
+            obj.display();
+        }
+    }
