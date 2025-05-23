@@ -27,5 +27,6 @@ public class NestedInnerClass
         outer.outerDisplay();
 
         Outer.Inner inner = new Outer(). new Inner();
+        inner.innerDisplay();
     }
 }

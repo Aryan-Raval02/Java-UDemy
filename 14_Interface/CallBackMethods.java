@@ -1,5 +1,3 @@
-import javax.management.modelmbean.ModelMBean;
-
 interface Member{
     public void callback();
 }

@@ -15,6 +15,20 @@ class CoffeeMachine
         sugarQty = 1;
     }
 
+    // fore removing warning of not used variables.
+    public float getCoffeeQty() {
+        return coffeeQty;
+    }
+    public float getMilkQty() {
+        return milkQty;
+    }
+    public float getSugarQty() {
+        return sugarQty;
+    }
+    public float getWaterQty() {
+        return waterQty;
+    }
+
     public void fillWater(float qty)
     {
         waterQty = qty;
