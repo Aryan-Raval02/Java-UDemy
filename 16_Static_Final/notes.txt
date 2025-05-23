@@ -1,0 +1,42 @@
+Static :
+    Static keyword is used for representing information metadata(a class).
+    
+    ~> Static Variables
+        if you only data related to a class then declare static variable.
+        static data member belong to a class.
+        static data member is shared data prefernce.
+        static variable create and present in inside Method Area.
+    
+    ~> Static Methods
+        if data need some processing and if you do some computations then declare static method.
+        static method only access static properties of a class.
+    
+    ~> Static Nested Class
+        if you have lot of data and make it to group together and made as static nested class.
+    
+    ~> Static Blocks
+        Whenever a class is loaded static block execute before constructor calling.
+        any number of static block will be declsre.
+    
+Final :
+    ~> final variable :
+            final variable is the constant.
+            it decare as capital letter.
+            when initialise final variable we can not modify it.
+            three types to initialise final variable :
+                1. at the time of variable decalration
+                2. in the block/static block.
+                3. in the constructor.
+
+    ~> final methods :
+            final method can not be override.
+            we should not redefine final methods.
+            final methods restrict to override.
+
+    ~> final class :
+            final class can not extended.
+            we can not borrow the features of final class.
+
+~> Singleton class :
+        a class which can create only a single object.
+        more than one objects there are not allowed to create.
