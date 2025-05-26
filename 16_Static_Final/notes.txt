@@ -4,7 +4,7 @@ Static :
     ~> Static Variables
         if you only data related to a class then declare static variable.
         static data member belong to a class.
-        static data member is shared data prefernce.
+        static data member is shared data preference.
         static variable create and present in inside Method Area.
     
     ~> Static Methods

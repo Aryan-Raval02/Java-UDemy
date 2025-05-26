@@ -1,0 +1,44 @@
+~> What are Packages ?
+    Packages are collection of classes, interfcases or other packages.
+    Packages are use for organizing java project.
+
+    If a java project has lots of classes and interfaces then we will porganize them into one package.
+
+~> Creating Package :
+
+    'package' keyword is used to create packages.
+
+    to add .class into defined package then run 'javac -d . file.java'.
+
+    Each file have only one package statement.
+
+
+~> Access Members :
+    There are use for define visibiity of data memebers and methods, etc.
+
+    four type :
+        default
+        private 
+        protected
+        public
+
+    Outer class can be only default or public.
+    
+
+Table :
+                                    default private protected public
+same class                             |        |       |       |
+
+same package sub class                 |        X       |       |
+
+smae package non-sub class             |        X       |       |
+
+different package sub class            X        X       |       |
+
+different package non-sub class        X        X       X       |
+
+
+~> Naming Convention :
+
+    java.util.Date;
+    java.sql.Date;
