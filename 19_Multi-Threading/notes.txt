@@ -1,0 +1,52 @@
+Multi - Programming :
+    Running multiple program on a single computer is Multi-Programming.
+    [] There are two types of Multi - Programming :
+        1. Multi - User : More than one users use single machine simultaneously.
+        2. Multi - Tasking : Only one user can running more then one task simultaneously. 
+                            Multi - Threading
+
+~> Multi Threading :
+    Windows ,MacOS
+    (what is idle in multithreading?)
+
+    Multiple Threads are in program.
+    CPU execute threads alternatively as if user assume that he use simultaneously.
+
+~> Why Multi Threading :
+
+
+
+~> Control Flow of a Program :
+
+
+
+~> Thread in Java :
+    Thread Class : When we reuire multi threading in our class then extend Thread class.
+    Runnable Class : When we require multi threaidng in our class and we extend some other class then implements Runnable interface.
+
+    Whenever we use Thread class or Runnable interface , we override run() method.
+    Inside run() we write our thread logics.
+    run() is starting point of Thread.
+    Only one method in Thread class or Runnable interface is run(). 
+
+
+~> States of Thread :
+
+    When one thread is terminated then we can not re-start. we have to create new thread.
+
+    Formal states of Thread :
+
+       start    run        end
+    new -> ready -> running -> terminated
+
+    When Thread is running and we require stop for somtimes or shared refernce for some task.
+          wait    notify
+    running -> wait -> running
+
+    When Thread is running and we require to delay for fix time.
+        sleep/wait
+    running -> timed wait -> running
+
+    when Thread is running and we reuire some Input/Ouput.
+        require I/O
+    running -> blocked -> running
