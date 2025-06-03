@@ -50,3 +50,61 @@ Multi - Programming :
     when Thread is running and we reuire some Input/Ouput.
         require I/O
     running -> blocked -> running
+
+~> Thread Proprities :
+      |-----|
+      |  C  |           Ready Queue
+      |  P  |           th1   th2   th3   th4   th5
+      |  U  |
+      |-----|<----------|-----------------------|
+                        |   Scheduler           |
+                        |-----------------------|
+                        |   JVM                 |
+                        |-----------------------|
+                        |   Operating System    |
+                        |-----------------------|
+
+    Thread.MIN_PRIORITY = 1
+    Thread.MIN_PRIORITY = 5
+    Thread.MIN_PRIORITY = 10
+
+~> Thread Class :
+
+    [] Constructors :
+        Thread()
+        Thread(Runnable r)
+        Thread(Runnable r,String name)
+        Thread(ThreadGroup g,String name)
+        Thread(String name)
+
+    [] Getter/Setter Methods :
+        long getId() : Returns the Unique ID of the Thread (Assigned by JVM)
+        String getName() : Returns the name of the Thread.
+        int getPriority() : Gets the Priority of Thread.
+        Thread.State getState() : Returns the Current State of Thread. (Automatically by JVM)
+        ThreadGroup getThreadGroup() : Returns the ThreadGroup of Thread which it belongs.
+
+        void setName(String name) : Sets the name of the Thread.
+        void setPriority(int p) : Sets the priority of the Thread ( 1 to 10 ).
+        void setDaemon(boolean b) : Marks the thread as daemon (true) or user thread (false).
+
+        () What is Daemon Thread : 
+            A daemon thread is a background thread with the lowest priority, typically used for tasks like garbage collection. It runs in the background and terminates automatically when all user threads finish.
+
+    [] Enquiry Methods : It return true or false.
+        boolean isAlive() : It return true if Thread is alive and return false if Thread is terminate.
+        boolean isDaemon() : It return true if Thread is acting as a Daemon Thread otherwise false.
+        boolean isInterrupted() : it return true if current Thread is interrupt(stop) by any reason.
+
+    [] Instance Methods :
+        void interrupt() : Thread can be interrupt(stop). in most case, sleeping and waiting
+        void join() : When current thread is complete his task and wait for other threads to complete.
+        void join(long millis) : When current thread is complete his task and wait for some fix time to terminate.
+        void start() : is used to start the Thread using object of Thread class.
+        void run() : this method have thread logic and actual functionality of thread.
+
+    [] Static Methods :
+        int activeCount() : it counts how many active threads are in a group.
+        Thread currentThread() : it return the reference of the current Thread.
+        void yield() : It holds the higher prority Thread for some time for executing lower priority Thread.
+        void dumpStack() : 
