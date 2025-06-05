@@ -29,6 +29,8 @@ Multi - Programming :
     run() is starting point of Thread.
     Only one method in Thread class or Runnable interface is run(). 
 
+    Threads have an own stack memory.
+
 
 ~> States of Thread :
 
@@ -90,6 +92,7 @@ Multi - Programming :
 
         () What is Daemon Thread : 
             A daemon thread is a background thread with the lowest priority, typically used for tasks like garbage collection. It runs in the background and terminates automatically when all user threads finish.
+            JVM will automatically kill all daemon threads when the main thread (and other non-daemon threads) finishes.
 
     [] Enquiry Methods : It return true or false.
         boolean isAlive() : It return true if Thread is alive and return false if Thread is terminate.
@@ -108,3 +111,23 @@ Multi - Programming :
         Thread currentThread() : it return the reference of the current Thread.
         void yield() : It holds the higher prority Thread for some time for executing lower priority Thread.
         void dumpStack() : 
+
+
+
+~> Synchronisation :
+    is the understanding between two entities, two processes, two threads.
+
+    Terms :
+        Resource Sharing : more than one thread can access same resource
+        Critical Section : lines of code which are access shared resource is called critical section.
+        Mutual Exclusion : more than one thread can not access shared resource at same time.
+        
+        Locking / Mutex  : When one thread is used shared resource then other thread will wait for finish thread task. after this, other threads are able to use. (This method belongs to Thread).
+        Semaphore        : wait() signal() (Operating System takes care of it)
+        Monitor          : it can be achieving from Object-Oriented Prpgramming.
+
+        Race Condition   : one is writing and more than one are reading.
+        Inter-Thread Communication : one is writing and one is reading
+
+
+
