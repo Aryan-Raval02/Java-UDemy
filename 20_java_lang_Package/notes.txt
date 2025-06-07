@@ -62,3 +62,13 @@
     Same as StringBuffer, but not thread-safe (no synchronization).
     Faster than StringBuffer when used in a single-threaded program.
     Best choice when performance is important and no thread safety is required.
+
+~> Enum :
+    We can define constants using Enum.
+    constants should be in Capital Letters.
+
+~> Reflection Package :
+    java has package like java.lang.reflect;
+    Using this, we can travel through any classes.
+
+    like, Members of class, COnstructors of Class, etc.
