@@ -1,0 +1,81 @@
+~> Lambda Expression :
+    
+    It is use for defining annonymous Method or Name less Method.
+    Define with the help for Interface.
+
+    Ex :
+    interface Lambda{
+        void display();
+    }
+
+    class Master
+    {
+        public static void main(String[] args)
+        {
+            Lambda l = () -> {
+                System.out.println("This is from Lambda Expression");
+            };
+        }
+    }
+
+~> Parameterized Lambda Expression :
+
+    There is not define override parameter data type in overriden lambda Expression.
+
+    Ex:
+    interface ParamLambda{
+        void greet(String name);
+    }
+
+    class Master
+    {
+        public static void main(String[] args)
+        {
+            ParamLambda l = (name) -> {
+                System.out.println("Good Morning, "+name);
+            };
+        }
+    }
+
+~> Important :
+
+    Lambda Expression can have more than one statement.
+    we can declare local variable inside lambda expression and access in it and modify it.
+
+    we can access only final variable into LE from context of LE.
+
+    Instance variable can access and modify by LE.
+
+    When any methods have FunxtionalInterface as parameter then we will pass to this method as LambdaExpression.
+
+~> Method Reference :
+
+    We set Lambda Expression to other method Refernce using scope resolution (::) Operator.
+
+    Ex:
+
+    interface MyLambda
+    {
+        public void display(String str);
+    }
+    public class LambdaDemo
+    {
+        public static void reverse(String str)
+        {
+            StringBuffer sb = new StringBuffer(str);
+            sb.reverse();
+            Syste,.out.println(str);
+        }
+        public static void main(String[] args)
+        {
+            MyLambda ml = LambdaDemo::reverse;
+            ml.display("ARYAN");
+        }
+    }
+
+    Here, when we run this code, it returns reverse of given String.
+    Because we pass method refernce of reverse of LambdaDemo to MyLambda.
+
+    We can also refernce to constructor using clasname::new.
+
+    It is work like Polymorphism.

@@ -39,4 +39,13 @@
             @interfcae MyAnno {}
 
             In, User defined Annotation.
-            Normally interface have abstract methods but in Annotation have Elements of Annotations 
+            Normally interface have abstract methods but in Annotation have Elements of Annotations.
+
+            We define more than one ELements of annotations then we provide all the annotations in Program.
+
+
+            @Retension(RetensionPolicy.Elements) : use for Reflexsion of metadata.
+            @Documented : Means this document available in java Documentations.
+            @Target(value=ElementType.Elements) : It is use for declaring for single attributr like constructor, variable,class, etc. we define array of elements.
+            @Inheerited : means annotations are use for sub classes.
+            @Repeatable : Means we use annotations for multiple times.
