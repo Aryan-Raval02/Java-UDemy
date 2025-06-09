@@ -18,3 +18,9 @@ This is where I documnet my progress, preactice concepts.
       - Object Oriented Programming
 
    - Advanced Topics
+      - Packages
+      - Exception Handling
+      - Multi Threading
+      - Annotations
+      - JavaDoc
+      - Lambda Expressions
