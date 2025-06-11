@@ -1,0 +1,82 @@
+
+~> Collections :
+
+    Java provides built in data structure is called Collection Framework.
+
+    Collections Example :
+        Integers
+        Floats
+        Students
+        Books
+        Customers
+        Products
+        Accounts
+        Movies
+        Friends
+
+    List fo data are store in main memory.
+    How to arrange list of data in main memory that is called Data Structure or Data Collection.
+
+    In array, list of data are stored in heap.
+
+
+~> Why collectrions are required ?
+
+    Array is basic collection in java.
+    It has limitation.
+
+    Array Limitations :
+        Array is fixed size.
+        Same value can store multiple times.
+        Value can not inserting, deleting and searching easily. we require shifting array elements.
+
+
+    Variable Size Collection : ArrayList, LinkedList
+    Distinct Collection      : Set
+    Sorted Collection        : SortedSet
+    insert, delete, search
+
+~> Collection Framework Hierarchy :
+
+        Iterable interface
+                |
+        Collection interface
+                |
+        -----------------------------------------------                               Map interface
+        |                     |                       |                                     |
+    List interface      Queue interface          Set interface                        -------------
+        |                     |                       |                               |           |    
+    ArrayList         -----------------          -------------                    SortedMap   HashMap
+    LinkedList        |               |          |            |                   intreface   LinkedHashMap
+    Vector          Deque     PriorityQueue  SortedSet      HashDet                   |       Hashtable
+    Stack         interface                  interface      LinkedHashSet         TreeMap
+                      |                          |
+                  ArrayDeque                  TreeSet
+
+
+    Collection means just group of elements.
+    List means Ordered or Indexed List. have duplicate
+    Set means it not allow duplicate value and Unordered List.
+    Map store key and value pair.
+    Queue work on FIFO.
+
+
+    All collections are in java.util package.
+
+~> interface Collection :
+    They are Generics.
+
+    methods :
+        add(E e)                    : add an object in collection.
+        addAll(Collection<E> c)     : add all objects.
+        remove(Object o)            : remove thr object snd return boolean.
+        removeAll(Collection<E> c)  : remove all Objects which are define as parameter.
+        clear()                     : Clear the Collection.
+        retainAll(Collection<E> c)  : remove all Object but retain all are there in define collection.
+        isEmpty()                   : return true if collection is empty otherwise false.
+        contains(Object o)          : return true if object is in the collection otherwise false.
+        containsAll(Collection<E> c): return true if all objects are in collection otherwise false.
+        equals(Object o)            : compare two collections.
+        size()                      : length of collection
+        iterator()                  : travesing or scanning all the element of collection
+        toArray()                   : convert collection into array.
