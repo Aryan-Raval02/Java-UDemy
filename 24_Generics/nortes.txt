@@ -1,0 +1,57 @@
+
+~> Generics :
+
+  [] Class Object
+    Reference of parent class can assign a object of child class.
+
+    But, REference of Child class can not assign a Object of Parent class directly.
+    We can assign it throough Typecasting.
+    
+
+    When we require to store object of same type in single collection 
+    then use Generics.
+
+~> How to create Generics :
+
+    class Data<T>
+    {
+        //we can define all member and methods using T.
+
+        private T obj;
+
+        public void setData(T v)
+        {
+            obj = v;
+        }
+        public T getData()
+        {
+            return obj;
+        }
+    }
+
+
+~> Generic Methods :
+    
+    before return type we should define <T> so method work like Generic Method.
+
+    Ex :
+    static <E> void show(E[] list)
+    {
+        for(E x : list) System.out.prinltn(x);
+    }
+
+    wild cards means ?
+
+    Lower Bounds means super keyword.
+
+    Upper Bounds means extend keyword.
+
+
+~> Do's and Dont's in Generics :
+
+    1. Only extends is allowed in Generic class definition.
+    2. Extends is used for interfaces also.
+    3. Extends from Only one class and multiple interfaces.
+    4. Extends and super are allowed with ? in methods.
+    5. <?> will accept all types but cannot access.
+    6. Base type of an Object should be same or ?
