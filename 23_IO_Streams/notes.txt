@@ -1,0 +1,120 @@
+~> Java IO Streams :
+
+    Java Program transfering data to resources.
+
+    Program has input from keyboard or mouse and process it and output to monitor.
+
+    Stream means flow of data.
+    Ex :    Program to a network.
+            File to Program
+        
+    
+    [] Buffer : A buffer is a temporary memory space that holds data for a short time while it is being read or written.
+                It helps make input/output (I/O) faster by reducing the number of direct interactions with files, memory, or other devices.
+
+    [] data flow : data broken into pieces(bytes) and transfering pieces into bytes.
+
+~> Class InputStream :
+
+    int read() : It reads a one byte each time. If nothing to read in source then return -1.
+    int read(byte[] b) : It read number of bytes depending on size of collection.
+    int read(byte[] b, int off, int len) : It read number of bytes depending on offset to length of collection.
+    int available() : It returns number of available bytes in file.
+    long skip(long n) : It skip number of bytes from resources.
+    void mark(int limit) : It remains byte into resources
+    void reset() : It returns to first byte.
+    boolean markSupported() : 
+    void close() : close the input stream.
+
+~> Class OutputStream :
+
+    void write(byte b) : write only one byte
+    void write(byte[] b) : write number of bytes depending on size of collection.
+    void write(byte[] b, int off, int len) : write number of bytes depending on offset tp length of collection.
+    void flush() : it is used to when buffer is use in OutputStream.
+    void close() : close the OutputStream.
+
+~> java.io Classes :
+
+Byte Type :
+    java.io.InputStream :
+        ByteArrayInputStream : read data from array of byte.
+        FileInputStream : read data from file.
+        FilterInputStream : 
+            BufferedInputStream : this stream use for extra space.
+            DataInputStream : it is use for read data from primitive data type.
+            LineNumberInputStream : read data along with line number.
+            PushbackInputStream : put data back to InputStream
+        ObjectInputStream : This allow to create object on own or built-in classes.
+        PipedInputStream : connected to PipedOutputStream
+        SequenceInputStream : if we have multiple InputStream then we set sequence using this class.
+        StringBufferInputStream : read data from String.
+
+    java.io.OutputStream :
+        ByteArrayOutputStream : write data to array of byte.
+        FileOutputStream : write data to file.
+        FilterOutputStream :
+            BufferedoutputStream : this stream use for extra space.
+            DataOutputStream : it is use for write data to primitive datatype.
+            PrintStream : use for printing.
+        ObjectOutputStream : This allow to create object on own or built-in classes.
+        PipedOutputStream connected tp PipedInputStream.
+
+Character Type :
+    java.io.Reader :
+        BufferedReader :
+            BufferedInputStream :
+        CharArrayReader :
+        FilterReader :
+            LineNumberInputStream :
+        InputStreamReader :
+            PushbackInputStream :
+        PipedReader :
+
+    java.io.Writer :
+        BufferedWriter :
+        CharArrayWriter :
+        OutputStreamReader :
+            FileWriter :
+        FilterWriter :
+        PipedWriter :
+        PrintWriter :
+        StringWriter :
+
+    
+~> Important :
+    There are no difference between FileInputStream and FileReader Only Differnce is Characterized.
+    There are no difference between FileOutputStream and FileWriter Only Differnce is Characterized.
+
+~> Sequential Access :
+    Continue Sequential reading from file.
+
+~> Random Access File:
+    Random reading from file.
+    Using RandomAccess Class of java.
+    It is use DataInput/Output Interface for Random access.
+
+~> File Class :
+    isDirectory() : return true if is directory.
+    list() : list of all file name
+    setlastModified() :
+    isHidden() : 
+
+~> Serialisation : Storing Data in File 
+
+    String Only :
+        Use BufferedReade and PrintStream.
+        PrintStream for write data into file.
+        BufferedReader has readLine() method.
+
+    Data Type : 
+        DataOutputStream write data its own format.
+        DataInputStream read data its own format.
+    
+    Whole Object :
+        ObjectOutputStream write data in its Object form.
+        ObjectInputStream read data in its Object form.
+
+        transient and static member can not serialise.
+
+
