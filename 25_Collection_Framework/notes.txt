@@ -144,3 +144,63 @@
 
     when element is low then priority is high.
     when element is large then priority is low.
+
+~> Hashing technique :
+
+    hashSet, hashMap, LinkedHashSet, LinkedHashMap, HashTable, Properties are use hashing techniques.
+
+    for implementing Hashing technique we require Hash Table.
+    by default size is 16.
+
+~> HashSet :
+
+    It using a HashMap internally.
+    It represents collection of unique elements.
+    Unordered, Null allowed.
+    Output order is not guaranteed.
+    fast operation.
+
+    HashSet implements Set, Cloneable, Serializable.
+
+~> TreeSet :
+
+    Unique elements in a sorted order and it uses red-Black Tree(a self balancing binary search tree).
+    not allowed duplicates.
+    does not allow null.
+
+    TreeSet implements NavigableSet, SortedSet, Set, Cloneable, Serializable.
+
+~> Comparable Interface :
+
+
+~> TreeMap :
+    store key value pair.
+    in sorted order.
+    using Red-Black Tree.
+    only key must be unique.
+    Null key not allow but value can be null.
+
+
+    TreeMap implements NavigableMap, SortedMap, Map, Cloneable, Serializable.
+
+~> HashMap :
+
+    key value pair.
+    it uses hashing to store and retrieve values quickly based on key.
+    key must be unique.
+    we can store one null key.
+    values can be null.
+    Unordered
+    Fast Access.
+
+    HashMap implements Map, Cloneable, Serializable.
+
+~> LinkedHashMap :
+
+    it maintains insertion order of keys.
+    Unique keys only
+    Allow one null key and multiple null values.
+    fast Access
+    Doubly Linked list supported.
+
+    LinkedHashMap implements Map, Cloneable, Serializable.
