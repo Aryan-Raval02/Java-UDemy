@@ -80,3 +80,67 @@
         size()                      : length of collection
         iterator()                  : travesing or scanning all the element of collection
         toArray()                   : convert collection into array.
+
+~> interface List extends Collection :
+    All methods of interface are available in List interface.
+    And Extra Methods of List also available.
+
+    methods :
+        add(int index, E e)                 : add element to given index.
+        addAll(int index, Collection<E> e)  : add elements to given index.
+        remove(int index)                   : remove element from given index.
+        get(int index)                      : get element from given index.
+        set(int index, E e)                 : replace the element to given index.
+        subList(int from, int to)           : get the list of from index to to index.
+        indexOf(Object o)                   : return index of first matching element. (Seaarching from left to right)
+        lastIndexOf(Object o)               : return index of last matching element. (Searching from right ot left)
+        listIterator()                      : traversing in both direction.
+        listIterator(int index)             : traversing to starting index in both direction.
+
+~> interface Set extends Collection :
+    All methods of interface are available in Set interfcae.
+    But, Set has no extra methods.
+
+~> interface Queue extends Collection :
+    All methods of interface are available in Queue interface.
+    And Extra Methods of Queue also available.
+
+    methods :
+        add(E e)    : add element at the end of Queue.
+        poll()      : remove first element. if Queue is Empty then it return null.
+        remove()    : remove first element. if Queue is Empty then it throws NoSuchElementException.
+        peek()      : it return first element of Queue. if Queue is Empty then it return null.
+        element()   : it return first element of Queue. if Queue is Empty then it throws NoSuchElementException.
+
+~> ArrayList :
+    is the Generic type.
+    it is indexed and store duplicate value.
+
+    ArrayList implements List, RandomAcsess, Cloneable, Serializable
+
+~> LinkedList :
+    generic type
+    it is not indexed and store duplicate value.
+    insertion and deletion are simple in linkedList comparing to other.
+    when insertion and deletion is running there are no du=isturb other element.
+    java uses doubly linkedList.
+
+    LinkedList implements List, Deque, Queue, Cloneable, Serializable
+
+~> ArrayDeque : 
+    generic type
+
+    ArrayDeque implements Deque, Queue, Clonable, Serializable.
+
+~> PriorityQueue :
+    generic type
+    ordered based on priority.
+    default, natural ordering like ascending for numnbers.
+
+    PriorityQueue implements Queue, Serializable.
+
+    internally uses binary heap.
+    head of queue element with highest priority.
+
+    when element is low then priority is high.
+    when element is large then priority is low.
