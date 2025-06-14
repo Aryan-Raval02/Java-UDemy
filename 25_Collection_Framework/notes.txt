@@ -128,11 +128,13 @@
     LinkedList implements List, Deque, Queue, Cloneable, Serializable
 
 ~> ArrayDeque : 
+
     generic type
 
     ArrayDeque implements Deque, Queue, Clonable, Serializable.
 
 ~> PriorityQueue :
+
     generic type
     ordered based on priority.
     default, natural ordering like ascending for numnbers.
@@ -154,6 +156,7 @@
 
 ~> HashSet :
 
+    Generic Type
     It using a HashMap internally.
     It represents collection of unique elements.
     Unordered, Null allowed.
@@ -164,6 +167,7 @@
 
 ~> TreeSet :
 
+    Generic type
     Unique elements in a sorted order and it uses red-Black Tree(a self balancing binary search tree).
     not allowed duplicates.
     does not allow null.
@@ -174,17 +178,19 @@
 
 
 ~> TreeMap :
+
+    Generic Type
     store key value pair.
     in sorted order.
     using Red-Black Tree.
     only key must be unique.
     Null key not allow but value can be null.
 
-
     TreeMap implements NavigableMap, SortedMap, Map, Cloneable, Serializable.
 
 ~> HashMap :
 
+    Generic Type
     key value pair.
     it uses hashing to store and retrieve values quickly based on key.
     key must be unique.
@@ -197,6 +203,7 @@
 
 ~> LinkedHashMap :
 
+    generic type
     it maintains insertion order of keys.
     Unique keys only
     Allow one null key and multiple null values.
@@ -204,3 +211,62 @@
     Doubly Linked list supported.
 
     LinkedHashMap implements Map, Cloneable, Serializable.
+
+~> LinkedHashSet :
+
+    generic type
+    maintains insertion order of elements.
+    it combine of HashSet and LinedList.
+    Unique elements
+    allow one null value.
+    Fast Lookup
+
+    LinkedHashSet implements Set, Cloneable, Serializable.
+
+~> HashTable :
+
+    generic type
+    legacy class that stores key-value pairs with synchronization.
+    not allow null key or value.
+    Unordered
+
+    HashTable implements Map, CLoneable, Serializable, Dictionary.
+
+~> Properties :
+
+    special class to store configuration data as key-value pair.
+    both key and value are String.
+    can load from and save to .properties files.
+    Common in JDBC, Spring, Java EE, etc.
+    Thread safe beacuse methods are synchronization.
+
+    Properties extends HashTable.
+    it overrides method to use String for both keys and values.
+
+    
+~> StringTokenizer :
+
+    Legacy Class 
+    use to split string into token based on delimiters.
+    default delimiter is whitespace. we can custom.
+    Thread safe.
+    alternative : String.split(), Scanner Class
+
+    StringTokenizer implements Enumeration.
+
+~> BitSet :
+
+    represents set of bits(0s and 1s), where each bit is either true(1) or false(0).
+    Auto-expandable
+    Indexed
+    Bit-level operations are very efficient
+    default value false(0)
+
+    BitSet implements Cloneable, Serializable.
+
+~> Arrays :
+
+    utility class that provides static methods to manipulate arrays.
+
+    it does not implement any interface, and cannot be instantiated.
+    all methods are static.
