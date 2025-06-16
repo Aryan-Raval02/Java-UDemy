@@ -5,10 +5,10 @@ java -classpath D:\Java\out\production\Java pack2.C
 
 Primitive Datatype :
 1. Integral
-    -> byte     1   -128 to 127     0
-    -> short    2   -32768 to 32767 0
+    -> byte     1   -128 to 127                 0
+    -> short    2   -32768 to 32767             0
     -> int      4   -2147483648 to 2147483647   0 
-    -> long     8   -2**63 to 2**63-1   0
+    -> long     8   -2**63 to 2**63-1           0
     
 2. Floating Point
     -> float    4   3.4e-038 to 3.4e+0.38   00f
@@ -16,7 +16,7 @@ Primitive Datatype :
 
 3. char
     -> 2    \u0000
-    -> java supports unicode other languages supports ASCII.
+    -> java supports unicode, other languages supports ASCII.
 
 4. boolean      N/D  true/false  false
 

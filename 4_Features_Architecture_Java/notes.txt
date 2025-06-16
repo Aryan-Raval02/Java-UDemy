@@ -31,19 +31,19 @@
 [] Architecture of JVM ?
 
 -> Class Loader
-    1. Loading -> Loads .class files (bytecode) into memory using the class loader.
-    2. Linking -> Verifies bytecode, prepares memory for static fields, and resolves symbolic references into actual references.
-    3. Initialisation -> Executes static initializers and initial values for static variables.
+    1. Loading          -> Loads .class files (bytecode) into memory using the class loader.
+    2. Linking          -> Verifies bytecode, prepares memory for static fields, and resolves symbolic references into actual references.
+    3. Initialisation   -> Executes static initializers and initial values for static variables.
 ->JVM Memory
-    1. Method Area -> Stores class-level information such as class structure, metadata, static variables, and method definitions. Shared among all threads.
-    2. Heap Area -> Used for dynamic memory allocation. All objects and arrays are created here. Shared among all threads.
-    3. Stack -> Stores method call frames. Each thread has its own stack. It contains method parameters, local variables, and return values.
-    4. PC Registers -> Each thread has its own PC register, which holds the address of the currently executing instruction in the method.
-    5. Native Method Stack -> Stores information needed to execute native (non-Java) methods, typically written in C/C++. Each thread has its own native stack.
+    1. Method Area          -> Stores class-level information such as class structure, metadata, static variables, and method definitions. Shared among all threads.
+    2. Heap Area            -> Used for dynamic memory allocation. All objects and arrays are created here. Shared among all threads.
+    3. Stack                -> Stores method call frames. Each thread has its own stack. It contains method parameters, local variables, and return values.
+    4. PC Registers         -> Each thread has its own PC register, which holds the address of the currently executing instruction in the method.
+    5. Native Method Stack  -> Stores information needed to execute native (non-Java) methods, typically written in C/C++. Each thread has its own native stack.
 -> Executer Engine
-    1. Interpreter -> Reads and executes bytecode instructions line-by-line. Slower but useful for quick startup.
-    2. JIT Compiler -> Compiles frequently used bytecode into native machine code at runtime, which significantly boosts performance.
-    3. Garbage Collector -> Automatically deallocates memory used by unreachable objects in the heap to prevent memory leaks.
+    1. Interpreter      -> Reads and executes bytecode instructions line-by-line. Slower but useful for quick startup.
+    2. JIT Compiler     -> Compiles frequently used bytecode into native machine code at runtime, which significantly boosts performance.
+    3. Garbage Collector-> Automatically deallocates memory used by unreachable objects in the heap to prevent memory leaks.
 -> Native Method Interface
     Acts as a bridge between Java code and native code (like C/C++).
     Allows Java programs to call or be called by native applications or libraries.
