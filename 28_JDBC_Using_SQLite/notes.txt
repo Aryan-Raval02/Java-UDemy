@@ -142,3 +142,38 @@
         ResultSet       : Where Result of Query are hold or store.
 
         SQLException    :
+
+    
+~> java.sql Package :
+
+    DriverManager :
+        It is used for establishing connection between java and databse.
+        It will utilise JDBC driver. 
+        Class.forName() create object on fly. not available in program but it with JVM.
+
+    Connection : 
+        Through Driver Manager we will get conncetion of JDBC Driver and Databse using Path of Database.
+        Connection Object is used to cretae Statement.
+        commit() is used to save modify table into database.
+        close() is used to close conncetion.
+        setAutoCommit() is used to ay=utomatic commit when DML is execute.
+
+    ResultSet :
+        When we require to execute query and store result then use ResultSet Object.
+        It Store Result Set of Corresponding Query.
+
+        next() is used to move to next one and no next then return false.
+        There are some Get Method to get any type of data.
+
+    Statement :
+        Three Types of Statements :
+            Statement
+            PreparedStatement
+            CallableStatement -> Stored Procedure
+
+        PreparedStatement : 
+            for taking input on runtime for Query.
+            Passing Parameter.
+
+[] important :
+    for DML and DDL query we use executeUpdate() of Statement.
