@@ -54,3 +54,8 @@
     Developing Client Program, we have Socket class.
     Developing Server Program, we have ServerSocket class.
 
+~> Datagram Socket :
+
+    Datagram Socket contains datagram packet.
+    Datagram packet contains IP address and port number where data send.
+     
