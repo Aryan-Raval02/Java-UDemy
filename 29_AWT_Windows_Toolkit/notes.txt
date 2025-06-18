@@ -66,3 +66,23 @@ MenuComponent               Component
 ~> Button, ActionEvent and ActionListener :
 
 ~> CheckBox, RadioButton, ItemEvent, ItemListener
+
+~> Flow Layout :
+    Flow Layout set Componenets in line by line.
+    Default alignment for this layout is Center.
+
+~> Border Layout :
+    We have 4 side(North, South, East, West) and one Center.
+    We can set only 5 Components.
+
+~> Grid layout :
+    Using Grid Layout , We can set Conponents in Tabuular form.
+    In form of Column and Row.
+    We can not empty cell anywhere.
+
+~> GridBag Layout :
+    Same Grid Layout.
+    But, We can Empty Cell Anywhere.
+
+~> Card Layout :
+    Card based like View(Tab).
