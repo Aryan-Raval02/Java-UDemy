@@ -86,3 +86,49 @@ MenuComponent               Component
 
 ~> Card Layout :
     Card based like View(Tab).
+
+~> Key Event :
+
+    Three Event of key pressing :
+        KeyPressed (Press)
+        KeyTyped   (Holding)
+        KeyReleased(Released)
+
+~> Mouse Event :
+
+    MouseEntered
+    MouseExited
+    MouseClicked
+    MousePressed
+    MouseReleased
+    MouseMoved
+    MouseDragged
+
+~> Windows Event :
+    WindowOpened
+    WindowClosing
+    WindowClosed
+    WindowIconified
+    WindowDeiconfied
+    WindowActivated
+    WindowDeactivated
+
+~> Adapter Classes :
+
+    Adapter are use alternative of Listeners.
+
+    In Interface, we must override all abstract method of interface.
+    Overcome this problem, we can use Adapter Class.
+
+~> Different Way for Handling Event
+    Frame Class as Listener
+    Inner Class
+    Anonymous Class
+    Lambda Expression
+
+~> Menu :
+    
+~> Paint, Color, Font :
+
+~> Animation :
+    Animation is made by Multi threading.
