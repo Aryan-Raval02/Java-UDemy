@@ -1,0 +1,9 @@
+
+~> AWT Vs Swing
+
+AWT                     Swing
+Platform Dependent      Independent
+Heavy Weight            Light Weight
+Few Components          Many Components
+Host Look and Feel      Pluggable Look and Feel
+No MVC                  Support MVC
