@@ -1,3 +1,5 @@
+package AWT;
+
 import java.awt.*;
 
 public class FirstApp 

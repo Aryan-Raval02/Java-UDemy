@@ -1,0 +1,68 @@
+
+~> What is Graphical User Interface ?
+    Interface is point of communication.
+    Set of commands and dialogues are used to communicate.
+
+    So, Communicate with Computer System we require interface.
+    Users are interact with interface so known as User Interface.
+
+    There are two types of Interface.
+        Character User Interface. : Windows Command Prompt
+        Graphical User Interface. ex : Windows
+
+    We can Develop Graphical User Interface in JAVA.
+    1. AWT - Abstract Windows Toolkit
+    2. Swings
+    3. JavaFX
+
+~> AWT : 
+    Toolkit for developing Windows based application. This Tools are abstract.
+    Looks and feels depending on OS.
+
+    Hierarchy :
+
+      Object
+         |
+      ---------------------------
+      |                         |
+MenuComponent               Component
+      |                         |
+    ------------            -----------------------------------------------------------------------------------------
+    |          |            |         |             |         |             |        |        |         |           |       
+ MenuBar    MenuItem    Canvas      Button      Checkbox    Choice      Container   List    Label   Scrollbar   TextComponent
+               |                                                            |                                       |
+      ---------------                                                -----------------                        -------------          
+      |             |                                                |               |                        |           |
+    Menu   CheckboxMenuItem                                        Panel           Window                  TextArea   TextField
+                                                                     |               |
+                                                                 java.applet    -----------
+                                                                   Applet       |         |
+                                                                              Dialog    Frame
+                                                                                |
+                                                                            FileDialog
+
+
+~> Event Delagation Model :
+
+    Components : All Components have :
+        Properties
+        Methods
+        Event
+
+    Listeners : (Interface)
+        Event handle by this listeners.
+
+~> When Which Event is generated ? 
+    ActionEvent         ActionListener
+    MouseEvent          MouseListener
+    KeyEvent            KeyListener
+    ItemEvent           ItemListener
+    TextEvent           TextListener
+    MouseWheelEvent     MouseWheelListener
+    WindowEvent         WindowListener
+    ComponentEvent      ComponentListener
+    ContainerEVent      ContainerListener
+
+~> Button, ActionEvent and ActionListener :
+
+    

@@ -1,0 +1,89 @@
+~> print() and println() :
+
+Both are accept any data type argument beacuse it is overlaoded.
+System.out.print() is not create new line.
+System.out.println() is create new line.
+
+~> printf() || format():
+
+This method is used to print formated output like c.
+-> Format Specifier :
+    %[argument_index$][flags][width][.precision]conversion
+
+    argument index - 1$ , 2$ , 3$ ...
+    flag '-' , '+' , '0' , '' , '('
+    conversion -
+    char    c
+    int     d,o,x //d-decimal   o-octal   x-hexadecimal
+    float   f,e,g //f-six digit precision   e-scientific represtation   g-four digit precison
+    String  s
+
+    note : if we are using argument index then use argument index in all formatters otherwise we will get error.
+
+
+
+~> String :
+    String is a built in class in java.
+    String is a collection of characters.
+
+    (Class Name)    (pool)
+    String str = "Java Program" 
+       (Reference) (String Object)
+
+                (heap)
+    String str = new String(new char[]{'A','B','C','D'}); // Constructor String(char[])
+    String str = new String(new byte[]{65,66,67,68});     // Constructor String(byte[]) 
+                                (pool)
+    String str = new String("Java Program)                // Constructor String(String)
+
+    Notes : If we are using same string literal then jvm not create new it use exists literal.
+            If we are using new keyword to create string then it creates one reference in heap memory and cretae passed string value it create new literal if not exists.
+
+~> String Method :
+    int length()
+    string toLowerCase()
+    string toUpperCase() 
+    string trim() : remove leading and trailing spaces from string
+    string subString(int begin) : it gives a part of string from begin index
+    string subString(int begin, int end) : it gives a part of string from begin to end index
+    string replace(old char, new char) : replace chracters from string
+    boolean startsWith(String s) : it compare string to starting of string if match then return true
+    boolean endsWith(String s) : it compare string to ending of string if match then return true
+    char charAt(int index) : it return character from string correspond to index
+    int indexOf(String s) : it returns first index of given string from string
+    int lastIndexOf(String s) : it returns last index of given string from string
+    boolean equals(String s) : it compare (not ignore case) two strings. If two strings are same then returns true
+    boolean equalIgnoreCase(String s) : it compare two strings with ignore case. if two strings are same then returns true
+    int compareTo(String s) : if first string is bigger then returns 1 or if first string is smaller then return -1. based on ASCII
+    String valueOf(int i) :
+
+
+~> Regular Expression :
+    It compare string to expression. if valid then return true.
+    
+    syntax :
+    str1.matches(String regex) boolean
+
+    Symbols for definig Regular Expression :
+    .       - Any character
+    [abc]   - Exactly given letters
+    [abc][vz] - Either first or second Set
+    [^abc]  - Except a b c
+    [a-z1-7]- a-z or 1-7
+    A|B     - A or b
+    XZ      - Exactly XZ
+
+    \d      - Digits
+    \D      - Not Digits
+    \s      - space
+    \S      - Not Space
+    \w      - Alphabets or digit
+    \W      - Neither alphabet or digit
+
+
+~> Quantifiers :
+    *       - 0 or more time
+    +       - One or more
+    ?       - 0 or 1 time
+    {X}     - X times
+    {X,Y}   - Between X and Y time

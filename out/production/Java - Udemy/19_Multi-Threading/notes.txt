@@ -1,0 +1,133 @@
+Multi - Programming :
+    Running multiple program on a single computer is Multi-Programming.
+    [] There are two types of Multi - Programming :
+        1. Multi - User : More than one users use single machine simultaneously.
+        2. Multi - Tasking : Only one user can running more then one task simultaneously. 
+                            Multi - Threading
+
+~> Multi Threading :
+    Windows ,MacOS
+    (what is idle in multithreading?)
+
+    Multiple Threads are in program.
+    CPU execute threads alternatively as if user assume that he use simultaneously.
+
+~> Why Multi Threading :
+
+
+
+~> Control Flow of a Program :
+
+
+
+~> Thread in Java :
+    Thread Class : When we reuire multi threading in our class then extend Thread class.
+    Runnable Class : When we require multi threaidng in our class and we extend some other class then implements Runnable interface.
+
+    Whenever we use Thread class or Runnable interface , we override run() method.
+    Inside run() we write our thread logics.
+    run() is starting point of Thread.
+    Only one method in Thread class or Runnable interface is run(). 
+
+    Threads have an own stack memory.
+
+
+~> States of Thread :
+
+    When one thread is terminated then we can not re-start. we have to create new thread.
+
+    Formal states of Thread :
+
+       start    run        end
+    new -> ready -> running -> terminated
+
+    When Thread is running and we require stop for somtimes or shared refernce for some task.
+          wait    notify
+    running -> wait -> running
+
+    When Thread is running and we require to delay for fix time.
+        sleep/wait
+    running -> timed wait -> running
+
+    when Thread is running and we reuire some Input/Ouput.
+        require I/O
+    running -> blocked -> running
+
+~> Thread Proprities :
+      |-----|
+      |  C  |           Ready Queue
+      |  P  |           th1   th2   th3   th4   th5
+      |  U  |
+      |-----|<----------|-----------------------|
+                        |   Scheduler           |
+                        |-----------------------|
+                        |   JVM                 |
+                        |-----------------------|
+                        |   Operating System    |
+                        |-----------------------|
+
+    Thread.MIN_PRIORITY = 1
+    Thread.MIN_PRIORITY = 5
+    Thread.MIN_PRIORITY = 10
+
+~> Thread Class :
+
+    [] Constructors :
+        Thread()
+        Thread(Runnable r)
+        Thread(Runnable r,String name)
+        Thread(ThreadGroup g,String name)
+        Thread(String name)
+
+    [] Getter/Setter Methods :
+        long getId() : Returns the Unique ID of the Thread (Assigned by JVM)
+        String getName() : Returns the name of the Thread.
+        int getPriority() : Gets the Priority of Thread.
+        Thread.State getState() : Returns the Current State of Thread. (Automatically by JVM)
+        ThreadGroup getThreadGroup() : Returns the ThreadGroup of Thread which it belongs.
+
+        void setName(String name) : Sets the name of the Thread.
+        void setPriority(int p) : Sets the priority of the Thread ( 1 to 10 ).
+        void setDaemon(boolean b) : Marks the thread as daemon (true) or user thread (false).
+
+        () What is Daemon Thread : 
+            A daemon thread is a background thread with the lowest priority, typically used for tasks like garbage collection. It runs in the background and terminates automatically when all user threads finish.
+            JVM will automatically kill all daemon threads when the main thread (and other non-daemon threads) finishes.
+
+    [] Enquiry Methods : It return true or false.
+        boolean isAlive() : It return true if Thread is alive and return false if Thread is terminate.
+        boolean isDaemon() : It return true if Thread is acting as a Daemon Thread otherwise false.
+        boolean isInterrupted() : it return true if current Thread is interrupt(stop) by any reason.
+
+    [] Instance Methods :
+        void interrupt() : Thread can be interrupt(stop). in most case, sleeping and waiting
+        void join() : When current thread is complete his task and wait for other threads to complete.
+        void join(long millis) : When current thread is complete his task and wait for some fix time to terminate.
+        void start() : is used to start the Thread using object of Thread class.
+        void run() : this method have thread logic and actual functionality of thread.
+
+    [] Static Methods :
+        int activeCount() : it counts how many active threads are in a group.
+        Thread currentThread() : it return the reference of the current Thread.
+        void yield() : It holds the higher prority Thread for some time for executing lower priority Thread.
+        void dumpStack() : 
+
+
+
+~> Synchronisation :
+    is the understanding between two entities, two processes, two threads.
+
+    Terms :
+        Resource Sharing : more than one thread can access same resource
+        Critical Section : lines of code which are access shared resource is called critical section.
+        Mutual Exclusion : more than one thread can not access shared resource at same time.
+        
+        Locking / Mutex  : When one thread is used shared resource then other thread will wait for finish thread task. after this, other threads are able to use. (This method belongs to Thread).
+        Semaphore        : wait() signal() (Operating System takes care of it)
+        Monitor          : it can be achieving from Object-Oriented Prpgramming.
+
+        Race Condition   : one is writing and more than one are reading.
+        Inter-Thread Communication : one is writing and one is reading
+
+
+

@@ -1,3 +1,5 @@
+package awt;
+
 import java.util.Scanner;
 
 public class LoopsProgram{

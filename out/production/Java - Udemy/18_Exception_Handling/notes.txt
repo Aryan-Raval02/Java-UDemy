@@ -1,0 +1,62 @@
+Programmer is write the program.
+User is use the program.
+
+Exception is Runtime Error.
+
+Types of Error :
+    Syntax Error            Programmer          Compiler
+    Logical Error           Programmer          Tracing/Debugger
+    Runtime Error           User                
+
+~> Exception Handling :
+    Runtime error should be handle by programmer is called Exception Handling.
+    Giving messages instead of errors.
+
+    Bad input
+    Unavailability of resources
+
+~> How to Handle Exception :
+    when runtime error found then this line to program terminated abnormally from line.
+
+    try : if some line has chance of runtime error then we write those line into cache block.
+          so, we handle the exception.
+
+    catch : if try block find the exception then only catch block execute.
+            and correspond Exception class is called.
+
+    finally :   finally block is optional.
+                if there is exception or not but finally block is alway executed.
+                it is use for clean up program.
+    
+    Exception handling makes our program more readable.
+
+~> Exception Class :
+    [] Exception    
+        1. ClassNotFoundException   (Checked)
+        2. IOException              (Checked)
+        3. InterruptedException     (Checked)
+        4. NumberFormatException    (Checked)
+        5. RuntimeException         (Unchecked)
+            i.      ArithmeticException
+            ii.     IndexOutOfBoundException
+            iii.    NullPointerException
+
+There is two types of Exception :
+    Checked Exception   : Compulsory to handle Exception(try...catch)
+    Unchecked Exception : can be Handle or not
+
+    class Exception{
+        string getMessage()     //e.getMessage()
+        string toString()       //e      automatically called toString().
+        void printStackTrace()
+    }
+
+
+[] User Defined Exception :
+    User defined Exception must be extended from Exception Class.
+    Override toString() methos in user defined exception.
+
+[] throw Vs throws :
+    throw is used to create object of Exception and throw exception explicilty.
+    throws declare that method or class can be throw exception.
+    This two keywords are used with together.

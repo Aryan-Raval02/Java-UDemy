@@ -1,0 +1,74 @@
+~> java.lang package :
+    java.lang.* package is by default imported.
+
+~> Object Class :
+    Object Class is parent class of all classes in java.
+    Mother of All classes in java
+
+    When we define owm class this internally extending by Object Class.
+    We can override Object class Methods in child class.
+
+    such method , toString(), hashcode() , equal();
+
+~> Wrapper Classes : 
+    Java is Object Oriented Programming Language.
+    so, Everything is an Object and There must be a Class.
+
+    for Every Datatype , Wrapper classes are available.
+    All are in java.lang package.
+
+    1. java.lang.Integer :
+        it is child of java.lang.Number class.
+
+        Boxing of Primitive variable is called Wrapper.
+        Variable refernce to an primitive variable is called Wrapper class object.
+
+        int m = 10;
+        Integer n = m; // Autoboxing
+        Integer n = Integer.valueOf(m); // Boxing
+
+        int p = n; // Auto Unboxing
+
+        int p= n.intValue(); // Unboxing
+
+    2. java.lang.FLoat :
+        float a = 12.5f;
+        Float b = 12.5f; //Auto Boxing
+
+        float c = b / 0; // isInfinite() = true // If b==Float.POSITIVE_INIFINITY Then true
+
+        float c = (float) Math.sqrt(-1); // isNaN() = true 
+        float c = (float) Math.sqrt(9); // isNaN() = false 
+
+
+~> String Vs StringBuffer Vs StringBuilder :
+
+    A String is a sequence of characters.
+    It is immutable : once created, it cannot be changed.
+    Every change creates a new object.
+    It is faster for read-only operations, but slower if you're modifying content repeatedly.
+
+    for Modifying String Values we should use StringBuffer.
+    append(), inset()
+
+    StringBuffer is used to modify strings (append, insert, delete, etc.).
+    It is mutable : can be changed without creating a new object.
+    Thread-safe : methods are synchronized, so it's safe in multithreaded environments.
+    Slower than StringBuilder because of synchronization.
+    Default capacity : 16 characters.
+
+    We want to make it faster then use StringBuilder.
+
+    Same as StringBuffer, but not thread-safe (no synchronization).
+    Faster than StringBuffer when used in a single-threaded program.
+    Best choice when performance is important and no thread safety is required.
+
+~> Enum :
+    We can define constants using Enum.
+    constants should be in Capital Letters.
+
+~> Reflection Package :
+    java has package like java.lang.reflect;
+    Using this, we can travel through any classes.
+
+    like, Members of class, COnstructors of Class, etc.

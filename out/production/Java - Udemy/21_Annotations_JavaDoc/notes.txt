@@ -1,0 +1,51 @@
+~> Java Documentation Tools :
+
+    Java Documentation is full detailed documentation of any version of java.
+
+    Java Doc Tags :
+
+    @author : Who creted java doc.
+    @version : Version of define class.
+    @since : When it is Created.
+    @see : Refernce of this class
+
+    @param : what parameters it take?
+    @return : What value it returing.
+    @throws : what exception it is throwing.
+    @exception : what exception is related
+    @deprecated : whether it is deprecated or not
+    @code : we can show logic of method
+
+    @link :  if you want to provide link to other resource.
+    @value : if you declare any value to static variable 
+    @serial : if you want to declare serial id.
+
+~> Annotations :
+    Annotations is to provide metadata to class.
+
+    Built-in Annotations :
+        1. Applied to code :
+            @override : It declare where method is override.
+            @Deprecated : When we require a Deprecated data.(Not to use it)
+            @FunctionlInterface : Interface having a single function then we can decalre FunctionalInterface.
+            @SuppressWarnings : When we require to hide warning then use SuppressWarning. such as, deprecated, unchecked
+            @SafeVarargs : it is use for variable argument method to remove warning.
+
+        2. Applied to other Annotations :
+            
+            Creating own Annotations we use @interface.
+
+            Example :
+            @interfcae MyAnno {}
+
+            In, User defined Annotation.
+            Normally interface have abstract methods but in Annotation have Elements of Annotations.
+
+            We define more than one ELements of annotations then we provide all the annotations in Program.
+
+
+            @Retension(RetensionPolicy.Elements) : use for Reflexsion of metadata.
+            @Documented : Means this document available in java Documentations.
+            @Target(value=ElementType.Elements) : It is use for declaring for single attributr like constructor, variable,class, etc. we define array of elements.
+            @Inheerited : means annotations are use for sub classes.
+            @Repeatable : Means we use annotations for multiple times.

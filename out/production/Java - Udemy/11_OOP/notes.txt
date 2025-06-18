@@ -1,0 +1,47 @@
+~> Principle of OOPs
+    Abstraction : Hiding internal details and showing only required features.
+    Encapsulation : All features are cover into single unit.
+    Inheritance (Specialisation) : Create new unit which extend old unit to new features.
+    Polymorphism (Generelisation) : same name but different work flow
+
+~> Class Vs Object
+    Object has defined Properties and behavior.
+    One class has many objects.
+
+| Aspect            | Class                                               | Object                                          |
+| ----------------- | --------------------------------------------------- | ----------------------------------------------- |
+| Definition        | Blueprint or template for creating objects          | Instance of a class                             |
+| Declaration       | Declared using the `class` keyword                  | Created using the `new` keyword                 |
+| Memory Allocation | No memory is allocated when a class is defined      | Memory is allocated when an object is created   |
+| Usage             | Defines properties (fields) and behaviors (methods) | Accesses those properties and behaviors         |
+| Example           | `class Car { int speed; void drive(){} }`           | `Car myCar = new Car();`                        |
+| Inheritance       | Can be inherited (superclass/subclass)              | Cannot be inherited                             |
+| Exists in         | Compile-time                                        | Runtime                                         |
+| Purpose           | To define structure and behavior                    | To use or implement that structure and behavior |
+
+
+~> Class and Object in Java
+
+
+~> Data Hiding : means restrict access to class members using access modifiers (private).
+                 protect internal data from unauthorised access and modification
+
+    Private member cannot access outside class. we can acces private member to its class public methods
+
+
+~> Type of Proprties :
+    Read & Writable
+    Read only
+    Write Only
+
+~> Constructor :
+    Constructor is special function to call itself when object is created.
+    Constructor has same name as class name.
+    Constructor is used to initialise properties of class.
+    we can overload constructor.
+    Constructor has no return type.
+    by default, one constructor is provided by compiler.
+
+    Two types :
+    Default Constructor
+    Parameterized Constructor

@@ -1,0 +1,32 @@
+Loops :
+    means repeat statements untill reach output or number of time.
+
+
+~> While Loop : repeatedly executes a block of code as long as a specified condition is true.
+    prefix loop
+    first check the condition
+    when condition is true then execute loop body
+    syntax :
+    while(condition){
+        //statements
+    }
+
+~> Do-While Loop : executes a block of code at least once, and then repeats the execution as long as a specified condition is true.
+    postfix loop
+    first execute body after check condition
+    when condition is false at first time then loop body execute at least one time
+    syntax :
+    do{
+        //statements
+    }while(condition);
+
+~> For Loop : executes a block of code a fixed number of time.
+    Most frequently use loop
+    initialisation done only one time
+    all three parameters are optional
+    syntax :
+    for(initialisation;condition;increment/decrement){
+        //statements
+    }
+
+~> Nested Loop : loop inside loop

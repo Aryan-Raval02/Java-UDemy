@@ -1,0 +1,55 @@
+[] Compiler Vs Interpreter
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Feature             | Compiler                                                        | Interpreter                                |
+| ------------------- | --------------------------------------------------------------- | -------------------------------------------------- |
+| Definition          | Translates the entire Java source code into bytecode in one go. | Executes Java bytecode line-by-line at runtime.    |
+| Component Name      | `javac` (Java Compiler)                                         | JVM (Java Virtual Machine) with Interpreter engine |
+| Input               | Java Source Code (`.java` file)                                 | Java Bytecode (`.class` file)                      |
+| Output              | Bytecode (`.class` file)                                        | Machine code (during runtime)                      |
+| Execution Time      | Faster after compilation (bytecode is ready)                    | Slower due to line-by-line execution               |
+| Error Detection     | Detects all syntax and semantic errors before execution         | Detects runtime errors during execution            |
+| Usage Phase         | Compilation phase                                               | Execution phase                                    |
+| Platform Dependency | Platform-independent bytecode is generated                      | JVM interprets bytecode for specific platforms     |
+| Speed               | Compilation is slower than interpretation                       | Interpretation is slower during execution          |
+| Memory Usage        | Requires more memory for storing bytecode                       | Less memory as it interprets line-by-line          |
+| Debugging           | Harder, since code is compiled before running                   | Easier, as execution happens line-by-line          |
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[] How java is platform independent ?
+-> A programmer writes the source code in a file, e.g., Test.java.
+-> The source code is compiled using the javac compiler, which converts it into bytecode. The compiled file is named Test.class.
+-> The Test.class file contains bytecode, which is an intermediate code not specific to any operating system or hardware.
+-> Every operating system (Windows, Linux, macOS, etc.) has its own version of Java Virtual Machine (JVM).
+-> The platform-specific JVM reads and interprets the bytecode line by line, converting it to machine code for that particular system.
+-> The program runs and gives the same output on any OS that has a compatible JVM installed.
+
+=> Java is platform independent because the compiled bytecode (.class file) can run on any operating system that has a JVM.
+
+
+
+[] Architecture of JVM ?
+
+-> Class Loader
+    1. Loading          -> Loads .class files (bytecode) into memory using the class loader.
+    2. Linking          -> Verifies bytecode, prepares memory for static fields, and resolves symbolic references into actual references.
+    3. Initialisation   -> Executes static initializers and initial values for static variables.
+->JVM Memory
+    1. Method Area          -> Stores class-level information such as class structure, metadata, static variables, and method definitions. Shared among all threads.
+    2. Heap Area            -> Used for dynamic memory allocation. All objects and arrays are created here. Shared among all threads.
+    3. Stack                -> Stores method call frames. Each thread has its own stack. It contains method parameters, local variables, and return values.
+    4. PC Registers         -> Each thread has its own PC register, which holds the address of the currently executing instruction in the method.
+    5. Native Method Stack  -> Stores information needed to execute native (non-Java) methods, typically written in C/C++. Each thread has its own native stack.
+-> Executer Engine
+    1. Interpreter      -> Reads and executes bytecode instructions line-by-line. Slower but useful for quick startup.
+    2. JIT Compiler     -> Compiles frequently used bytecode into native machine code at runtime, which significantly boosts performance.
+    3. Garbage Collector-> Automatically deallocates memory used by unreachable objects in the heap to prevent memory leaks.
+-> Native Method Interface
+    Acts as a bridge between Java code and native code (like C/C++).
+    Allows Java programs to call or be called by native applications or libraries.
+    Helps when using platform-specific features or performance-critical code.
+-> Native Method Library
+    These are the platform-specific native libraries (DLLs on Windows, .so on Linux) used by the native methods.
+    JVM loads these libraries when a native method is invoked via JNI.
+
+    

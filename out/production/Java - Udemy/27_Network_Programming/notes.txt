@@ -1,0 +1,61 @@
+
+~> OSI Model : (Open System Interconncetion)
+
+    OSI Model describes that how information from a Software application in one computer to software application to other computer.
+    OSI Model based on some Layers :
+
+        Application Layer   : 
+            It provide service to user.
+
+        Presentation Layer  : 
+            It responsible for translation, compression and encryption.
+
+        Session Layer       : 
+            It is used to establish, manage and terminate the sessions.
+
+        Transport Layer     : 
+            It provides reliable message delivery from process to process. (Connection)
+
+        Network Layer       :
+            It responsible to moving packets from source to destination.
+            It provides Logical address.
+            (IP Address).
+
+        Data Link Layer     :
+            It is used for error free transfer of data.
+            It Provides Physical Address.
+            (MAC Address).
+
+        Physical Layer      : 
+            It provide physical medium through which data are transmitted.
+
+~> TCP/IP :
+
+    Application Layer   :   HTTP, FTP, SMTP, POP
+
+    Transport Layer     :   TCP / UDP
+
+    Network Layer       :   IPv4  IPv6
+
+    Network Access Layer:   Ethernet
+
+
+~> How to develop a client-server program ?
+
+    Echo server commonly use for client-server program.
+    If a client send message to a server then server backs return message to client.
+
+    Locally, MAC address is used to transfer data.
+    In Internet, IP address is used to transfer data.
+
+    Port No : 0 - 65535
+              0 - 1023 are reserved.
+
+    Developing Client Program, we have Socket class.
+    Developing Server Program, we have ServerSocket class.
+
+~> Datagram Socket :
+
+    Datagram Socket contains datagram packet.
+    Datagram packet contains IP address and port number where data send.
+     

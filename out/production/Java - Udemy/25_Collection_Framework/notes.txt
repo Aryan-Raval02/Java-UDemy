@@ -1,0 +1,272 @@
+
+~> Collections :
+
+    Java provides built in data structure is called Collection Framework.
+
+    Collections Example :
+        Integers
+        Floats
+        Students
+        Books
+        Customers
+        Products
+        Accounts
+        Movies
+        Friends
+
+    List fo data are store in main memory.
+    How to arrange list of data in main memory that is called Data Structure or Data Collection.
+
+    In array, list of data are stored in heap.
+
+
+~> Why collectrions are required ?
+
+    Array is basic collection in java.
+    It has limitation.
+
+    Array Limitations :
+        Array is fixed size.
+        Same value can store multiple times.
+        Value can not inserting, deleting and searching easily. we require shifting array elements.
+
+
+    Variable Size Collection : ArrayList, LinkedList
+    Distinct Collection      : Set
+    Sorted Collection        : SortedSet
+    insert, delete, search
+
+~> Collection Framework Hierarchy :
+
+        Iterable interface
+                |
+        Collection interface
+                |
+        -----------------------------------------------                               Map interface
+        |                     |                       |                                     |
+    List interface      Queue interface          Set interface                        -------------
+        |                     |                       |                               |           |    
+    ArrayList         -----------------          -------------                    SortedMap   HashMap
+    LinkedList        |               |          |            |                   intreface   LinkedHashMap
+    Vector          Deque     PriorityQueue  SortedSet      HashDet                   |       Hashtable
+    Stack         interface                  interface      LinkedHashSet         TreeMap
+                      |                          |
+                  ArrayDeque                  TreeSet
+
+
+    Collection means just group of elements.
+    List means Ordered or Indexed List. have duplicate
+    Set means it not allow duplicate value and Unordered List.
+    Map store key and value pair.
+    Queue work on FIFO.
+
+
+    All collections are in java.util package.
+
+~> interface Collection :
+    They are Generics.
+
+    methods :
+        add(E e)                    : add an object in collection.
+        addAll(Collection<E> c)     : add all objects.
+        remove(Object o)            : remove thr object snd return boolean.
+        removeAll(Collection<E> c)  : remove all Objects which are define as parameter.
+        clear()                     : Clear the Collection.
+        retainAll(Collection<E> c)  : remove all Object but retain all are there in define collection.
+        isEmpty()                   : return true if collection is empty otherwise false.
+        contains(Object o)          : return true if object is in the collection otherwise false.
+        containsAll(Collection<E> c): return true if all objects are in collection otherwise false.
+        equals(Object o)            : compare two collections.
+        size()                      : length of collection
+        iterator()                  : travesing or scanning all the element of collection
+        toArray()                   : convert collection into array.
+
+~> interface List extends Collection :
+    All methods of interface are available in List interface.
+    And Extra Methods of List also available.
+
+    methods :
+        add(int index, E e)                 : add element to given index.
+        addAll(int index, Collection<E> e)  : add elements to given index.
+        remove(int index)                   : remove element from given index.
+        get(int index)                      : get element from given index.
+        set(int index, E e)                 : replace the element to given index.
+        subList(int from, int to)           : get the list of from index to to index.
+        indexOf(Object o)                   : return index of first matching element. (Seaarching from left to right)
+        lastIndexOf(Object o)               : return index of last matching element. (Searching from right ot left)
+        listIterator()                      : traversing in both direction.
+        listIterator(int index)             : traversing to starting index in both direction.
+
+~> interface Set extends Collection :
+    All methods of interface are available in Set interfcae.
+    But, Set has no extra methods.
+
+~> interface Queue extends Collection :
+    All methods of interface are available in Queue interface.
+    And Extra Methods of Queue also available.
+
+    methods :
+        add(E e)    : add element at the end of Queue.
+        poll()      : remove first element. if Queue is Empty then it return null.
+        remove()    : remove first element. if Queue is Empty then it throws NoSuchElementException.
+        peek()      : it return first element of Queue. if Queue is Empty then it return null.
+        element()   : it return first element of Queue. if Queue is Empty then it throws NoSuchElementException.
+
+~> ArrayList :
+    is the Generic type.
+    it is indexed and store duplicate value.
+
+    ArrayList implements List, RandomAcsess, Cloneable, Serializable
+
+~> LinkedList :
+    generic type
+    it is not indexed and store duplicate value.
+    insertion and deletion are simple in linkedList comparing to other.
+    when insertion and deletion is running there are no du=isturb other element.
+    java uses doubly linkedList.
+
+    LinkedList implements List, Deque, Queue, Cloneable, Serializable
+
+~> ArrayDeque : 
+
+    generic type
+
+    ArrayDeque implements Deque, Queue, Clonable, Serializable.
+
+~> PriorityQueue :
+
+    generic type
+    ordered based on priority.
+    default, natural ordering like ascending for numnbers.
+
+    PriorityQueue implements Queue, Serializable.
+
+    internally uses binary heap.
+    head of queue element with highest priority.
+
+    when element is low then priority is high.
+    when element is large then priority is low.
+
+~> Hashing technique :
+
+    hashSet, hashMap, LinkedHashSet, LinkedHashMap, HashTable, Properties are use hashing techniques.
+
+    for implementing Hashing technique we require Hash Table.
+    by default size is 16.
+
+~> HashSet :
+
+    Generic Type
+    It using a HashMap internally.
+    It represents collection of unique elements.
+    Unordered, Null allowed.
+    Output order is not guaranteed.
+    fast operation.
+
+    HashSet implements Set, Cloneable, Serializable.
+
+~> TreeSet :
+
+    Generic type
+    Unique elements in a sorted order and it uses red-Black Tree(a self balancing binary search tree).
+    not allowed duplicates.
+    does not allow null.
+
+    TreeSet implements NavigableSet, SortedSet, Set, Cloneable, Serializable.
+
+~> Comparable Interface :
+
+
+~> TreeMap :
+
+    Generic Type
+    store key value pair.
+    in sorted order.
+    using Red-Black Tree.
+    only key must be unique.
+    Null key not allow but value can be null.
+
+    TreeMap implements NavigableMap, SortedMap, Map, Cloneable, Serializable.
+
+~> HashMap :
+
+    Generic Type
+    key value pair.
+    it uses hashing to store and retrieve values quickly based on key.
+    key must be unique.
+    we can store one null key.
+    values can be null.
+    Unordered
+    Fast Access.
+
+    HashMap implements Map, Cloneable, Serializable.
+
+~> LinkedHashMap :
+
+    generic type
+    it maintains insertion order of keys.
+    Unique keys only
+    Allow one null key and multiple null values.
+    fast Access
+    Doubly Linked list supported.
+
+    LinkedHashMap implements Map, Cloneable, Serializable.
+
+~> LinkedHashSet :
+
+    generic type
+    maintains insertion order of elements.
+    it combine of HashSet and LinedList.
+    Unique elements
+    allow one null value.
+    Fast Lookup
+
+    LinkedHashSet implements Set, Cloneable, Serializable.
+
+~> HashTable :
+
+    generic type
+    legacy class that stores key-value pairs with synchronization.
+    not allow null key or value.
+    Unordered
+
+    HashTable implements Map, CLoneable, Serializable, Dictionary.
+
+~> Properties :
+
+    special class to store configuration data as key-value pair.
+    both key and value are String.
+    can load from and save to .properties files.
+    Common in JDBC, Spring, Java EE, etc.
+    Thread safe beacuse methods are synchronization.
+
+    Properties extends HashTable.
+    it overrides method to use String for both keys and values.
+
+    
+~> StringTokenizer :
+
+    Legacy Class 
+    use to split string into token based on delimiters.
+    default delimiter is whitespace. we can custom.
+    Thread safe.
+    alternative : String.split(), Scanner Class
+
+    StringTokenizer implements Enumeration.
+
+~> BitSet :
+
+    represents set of bits(0s and 1s), where each bit is either true(1) or false(0).
+    Auto-expandable
+    Indexed
+    Bit-level operations are very efficient
+    default value false(0)
+
+    BitSet implements Cloneable, Serializable.
+
+~> Arrays :
+
+    utility class that provides static methods to manipulate arrays.
+
+    it does not implement any interface, and cannot be instantiated.
+    all methods are static.
