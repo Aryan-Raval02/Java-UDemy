@@ -1,0 +1,149 @@
+for compile : 
+    javac --module-path "C:\Program Files\Java\javafx-sdk-24.0.1\lib" --add-modules javafx.controls HelloFX.java
+
+for Run :
+    java --module-path "C:\Program Files\Java\javafx-sdk-24.0.1\lib" --add-modules javafx.controls HelloFX.java
+
+
+~> JavaFX :
+    Frame Work for developing GUI Application in java.
+
+    [] Features :
+        java API
+        FXML Scene Builder 
+        Web View : interact with Web Page.
+        Swing Interoperability : We can use JavaFX inside Swing Application.
+        Biult-in UI Controls and CSS : we can define own style of Componenents.
+        Canvas API 
+        Multitouch Support 
+        Hardware Accelerated Graphics Pipeline
+        High performance Media Engine
+        Self contained Application Deployment Model
+
+~> Structure of JavaFX Application :
+
+    javafx.scene.chart :
+        LineChart
+        PieChart
+        BarChart
+        XYChart
+    
+    javafx.scene.shape :
+        Arc
+        Line
+        Circle
+        Ellipse
+        Polygon
+        Rectangle
+
+    javafx.scene.control :
+        Button
+        TextField
+        CheckBox
+        ScrollBar
+        ListView
+        Menubar
+    
+    javafx.scene.layout :
+        VBox
+        HBox
+        Stack
+        Tile
+        FlowPane
+        BorderPane
+
+    javafx.scene.text
+    javafx.scene.image
+    javafx.scene.media
+    javafx.scene.transform
+    javafx.scene.paint
+    javafx.scene.web
+
+    Core :
+        Stage
+        Scene
+        Node
+        FXML
+
+    Container Controls :
+        Accordion
+        TitledPane
+        TabPane
+        SplitPane
+        ScrollPane
+
+    Layout :
+        HBox
+        VBox
+        FlowPane
+        BorderPane
+        TilePane
+        GridPane
+        Group
+
+    Basic Controls :
+        Label
+        Button
+        MenuButton
+        SplitMenuButton
+        ToggleButton
+        RadioButton
+        CheckBox
+        ChoiceBox
+        ComboBox
+        ListView
+        TextField
+        PasswordField
+        TextArea
+        ImageView
+        DatePicker
+        ColorPicker
+        Slider
+        Tooltip
+        Hyperlink
+        ProgressBar
+        Menubar
+        ContextMenu
+        Separator
+        TableView
+        TreeView
+        TreeTableView
+        HTMLEditor
+        Pagination
+        FileChooser
+
+
+                    Stage
+                -------------   
+                |           |
+              Scene       Scene
+                |           |
+              Parent      Parent
+    -----------------   -----------------
+    |       |       |   |       |       |
+   Chile  Child  Child Child  Child   Child
+
+~> Common Properties of Controls :
+
+~> Event Handling :
+
+    for handling Event :
+        EventHandler<ActionEvent>
+            handle(ActionEvent e)
+
+    for handling event we have three type :
+        Implementing Interface
+        Anonymous inner Class
+        Lambda Expression
+
+~> CheckBox, RadioButton, HBox, VBox :
+
+~> TextArea and Slider :
+
+~> DatePicker, ColorPicker, FileChooser
+
+    Link for DatePicker
+        https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/date-picker.htm
+
+    Link for ColorPicker
+        https://docs.oracle.com/javafx/2/ui_controls/color-picker.htm
