@@ -7,3 +7,24 @@ Heavy Weight            Light Weight
 Few Components          Many Components
 Host Look and Feel      Pluggable Look and Feel
 No MVC                  Support MVC
+
+~> Check Box and Radio Button
+~> TextField and FOrmattedTextField
+~> Borders of Swing Components
+
+~> JTree Components :
+    It represents data in form Tree structure.(Directory)
+
+~> Layered Pane :
+
+~> Internal Frame :
+    JDesktopPane class allows to host multiple Window or Frame.
+
+~> Split Pane and tabbed pane
+
+~> JSlider and JProgrssBar
+
+~> JSpinner, Jlist, JComboBox
+
+~> JMenuBar and JToolBar
+    JToolbar is Flexing Toolbar.
