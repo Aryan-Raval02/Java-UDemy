@@ -2,7 +2,7 @@
 # Java Learning Journey - Aryan Raval
 
 Welcome to my java learning repository!
-This is where I documnet my progress, preactice concepts.
+This is where I documnet my progress, practice concepts.
 
 ## What You Will Find Here
    - Core Concepts
@@ -29,3 +29,7 @@ This is where I documnet my progress, preactice concepts.
       - Collection Framework
       - Joda Date & Time API
       - Network Programming
+      - JDBC Using SQLite
+      - Abstract Windows Toolkit AWT (Applet)
+      - Java Swing Components
+      - JavaFX Framework
