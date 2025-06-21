@@ -21,7 +21,7 @@
         it is child of java.lang.Number class.
 
         Boxing of Primitive variable is called Wrapper.
-        Variable refernce to an primitive variable is called Wrapper class object.
+        Variable reference to an primitive variable is called Wrapper class object.
 
         int m = 10;
         Integer n = m; // Autoboxing

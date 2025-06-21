@@ -2,15 +2,15 @@
     Interfcae is used to define blueprint for classes.
     purpose of interface is polymorphism
 
-    'interfcae' keyword is used to create Interface.
+    'interface' keyword is used to create Interface.
 
-    interfcae contains :
-    Abstract Method
-    Default Method
-    Static Methods
-    Constants
+    interface contains :
+        Abstract Method
+        Default Method
+        Static Methods
+        Constants
 
-    java does not support mu;tiple classes.
+    java does not support multiple classes in inheritance.
     Interface allow you to define what a class must do.
 
 ~> Multiple Inheritance Vs Interface
@@ -39,9 +39,9 @@
     You can create only reference of interface.
     Interface implements to class not extends.
     Compulsory override all method from interface to class.
-    interfcae extends other interface.
+    interface extends other interface.
     we can access static properties of interface through interface name.
     default method is not neccessary to override but we can override.
-    we can define privste method but cant call it from outside.
+    we can define private method but cant call it from outside.
 
 ~> Callback Method:

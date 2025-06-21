@@ -12,7 +12,7 @@
     Default value of an array is depend on datatype of array.
 
     Access :
-        To access value of arrya : name[index]
+        To access value of array : name[index]
 
 ~> For Each loop on Array :
 

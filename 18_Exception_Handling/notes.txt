@@ -18,14 +18,14 @@ Types of Error :
 ~> How to Handle Exception :
     when runtime error found then this line to program terminated abnormally from line.
 
-    try : if some line has chance of runtime error then we write those line into cache block.
+    try : if some line has chance of runtime error then we write those line into catch block.
           so, we handle the exception.
 
     catch : if try block find the exception then only catch block execute.
             and correspond Exception class is called.
 
     finally :   finally block is optional.
-                if there is exception or not but finally block is alway executed.
+                if there is exception or not but finally block is always executed.
                 it is use for clean up program.
     
     Exception handling makes our program more readable.
@@ -54,7 +54,7 @@ There is two types of Exception :
 
 [] User Defined Exception :
     User defined Exception must be extended from Exception Class.
-    Override toString() methos in user defined exception.
+    Override toString() method in user defined exception class.
 
 [] throw Vs throws :
     throw is used to create object of Exception and throw exception explicilty.

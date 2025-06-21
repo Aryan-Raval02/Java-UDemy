@@ -2,7 +2,7 @@
     An Inner Class in Java is a class defined within another class.
 
 ~> Nested Inner Class :
-    A Nested Inner Class is simply an inner class that is defined within another class.
+    A Nested Inner Class is simply a class that is defined within another class.
     Can access all members of the outer class, including private ones.
     Requires an instance of the outer class to be created.
     Outer class can not access properties of inner class directly. we can access it through object of inner class.
@@ -59,7 +59,8 @@
     }
 
 ~> Anonymous Inner Class :
-    An Anonymous Inner Class is a class without a name that is declared and instantiated in a single expression. It’s commonly used to override methods of a class or interface for one-time use.
+    An Anonymous Inner Class is a class without a name that is declared and instantiated in a single expression.
+    It’s commonly used to override methods of a class or interface for one-time use.
 
     Key :
         No explicit class name.

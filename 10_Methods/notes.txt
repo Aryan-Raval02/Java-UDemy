@@ -22,21 +22,21 @@
 
 ~> Method Overloading :
     means same method name with different datatype of parameter.
-    Compiler take care of which method is called in program
+    Compiler take care of which method is called in program.
 
 ~> varargs :
     When we want to pass lot of argument of same data type than we will write varargs methods.
 
-    returnType methodName(dataType...variable_name) // (int... x) or (int[] x)
+    returnType methodName(dataType... variable_name) // (int... x) or (int[] x)
 
     We can pass number of parameters or array to methods.
 
     This is optional parameter
 
-    Varargs paramete is last position of parameters list.
+    Varargs parameter is last position in parameters list.
 
 ~> Command line argumnet :
-   Command-line arguments are values you can pass to a program when you run it from the terminal or command line.
+   Command-line arguments are values we can pass to a program when you run it from the terminal or command line.
 
 ~> Recursion : means method called itself.
 

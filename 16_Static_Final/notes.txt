@@ -16,7 +16,7 @@ Static :
     
     ~> Static Blocks
         Whenever a class is loaded static block execute before constructor calling.
-        any number of static block will be declsre.
+        any number of static block will be declare.
     
 Final :
     ~> final variable :

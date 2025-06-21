@@ -79,6 +79,11 @@ for Run :
         BorderPane
         TilePane
         GridPane
+        ScrollPane
+        SplitPane
+        TabPane
+        TitledPane
+        Accordion
         Group
 
     Basic Controls :
@@ -147,3 +152,5 @@ for Run :
 
     Link for ColorPicker
         https://docs.oracle.com/javafx/2/ui_controls/color-picker.htm
+
+~> ComboBox and Form Application :

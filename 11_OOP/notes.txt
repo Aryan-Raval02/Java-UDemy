@@ -5,9 +5,10 @@
     Polymorphism (Generelisation) : same name but different work flow
 
 ~> Class Vs Object
-    Object has defined Properties and behavior.
+    Object has access Properties and behavior.
     One class has many objects.
 
+-----------------------------------------------------------------------------------------------------------------------------
 | Aspect            | Class                                               | Object                                          |
 | ----------------- | --------------------------------------------------- | ----------------------------------------------- |
 | Definition        | Blueprint or template for creating objects          | Instance of a class                             |
@@ -18,6 +19,7 @@
 | Inheritance       | Can be inherited (superclass/subclass)              | Cannot be inherited                             |
 | Exists in         | Compile-time                                        | Runtime                                         |
 | Purpose           | To define structure and behavior                    | To use or implement that structure and behavior |
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 ~> Class and Object in Java
@@ -27,7 +29,7 @@
                  protect internal data from unauthorised access and modification
 
     Private member cannot access outside class. we can acces private member to its class public methods
-
+`
 
 ~> Type of Proprties :
     Read & Writable

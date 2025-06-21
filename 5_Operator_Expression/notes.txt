@@ -18,7 +18,7 @@
 ~> Left Shift :
     Suppose we have a=5 //00...0101
     int result = a << 1;
-    Them all bits move one position to left.
+    Then all bits move one position to left.
     original : 00...0101 // 5
     output   : 00...1010 // 10
 

@@ -1,8 +1,8 @@
 ~> What are Packages ?
-    Packages are collection of classes, interfcases or other packages.
+    Packages are collection of classes, interfaces or other packages.
     Packages are use for organizing java project.
 
-    If a java project has lots of classes and interfaces then we will porganize them into one package.
+    If a java project has lots of classes and interfaces then we will organize them into one package.
 
 ~> Creating Package :
 
@@ -31,11 +31,16 @@ same class                             |        |       |       |
 
 same package sub class                 |        X       |       |
 
-smae package non-sub class             |        X       |       |
+same package non-sub class             |        X       |       |
 
 different package sub class            X        X       |       |
 
 different package non-sub class        X        X       X       |
+
+private : Accessible only within the same class.
+default : Accessible within the same package only.
+protected:Accessible in the same package and in subclasses (even in different packages).
+public  : Accessible from anywhere.
 
 
 ~> Naming Convention :

@@ -3,7 +3,7 @@
     Generelisation : Generalisation is the process of extracting shared characteristics from two or more classes and combining them into a generalized superclass. 
     
                 Ex : SmartPhone -> iphone, samsung, vivo
-                     Vehicle -> Csr, Bike, Ship
+                     Vehicle -> Car, Bike, Ship
                      Shape -> Triangle, Rectangle, Circle
                     
                     Common Parent
@@ -26,10 +26,10 @@
     super keyword refer to parent class constructor.
 
 
-~>  this ;
+~>  this :
             reference to current object and target inside class properties and methods.
             this keyword used to avoid name conflict.
-            this keyword is used to access curret object's properties and methods.
+            this keyword is used to access current object's properties and methods.
 
 ~>  Super :
             super keyword refer to parent class
