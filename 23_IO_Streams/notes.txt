@@ -12,7 +12,7 @@
     [] Buffer : A buffer is a temporary memory space that holds data for a short time while it is being read or written.
                 It helps make input/output (I/O) faster by reducing the number of direct interactions with files, memory, or other devices.
 
-    [] data flow : data broken into pieces(bytes) and transfering pieces into bytes.
+    [] data flow : data broken into pieces(bytes) and transfering pieces from to.
 
 ~> Class InputStream :
 
@@ -58,7 +58,7 @@ Byte Type :
             DataOutputStream : it is use for write data to primitive datatype.
             PrintStream : use for printing.
         ObjectOutputStream : This allow to create object on own or built-in classes.
-        PipedOutputStream connected tp PipedInputStream.
+        PipedOutputStream : connected to PipedInputStream.
 
 Character Type :
     java.io.Reader :
@@ -103,7 +103,7 @@ Character Type :
 ~> Serialisation : Storing Data in File 
 
     String Only :
-        Use BufferedReade and PrintStream.
+        Use BufferedReader and PrintStream.
         PrintStream for write data into file.
         BufferedReader has readLine() method.
 

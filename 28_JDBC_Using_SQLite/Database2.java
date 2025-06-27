@@ -1,8 +1,6 @@
 import java.sql.*;
 import java.util.*;
 
-import javax.naming.spi.DirStateFactory.Result;
-
 public class Database2 
 {    
     public static void main(String[] args) throws Exception

@@ -18,7 +18,7 @@ Types of Error :
 ~> How to Handle Exception :
     when runtime error found then this line to program terminated abnormally from line.
 
-    try : if some line has chance of runtime error then we write those line into catch block.
+    try : if some line has chance of runtime error then we write those line into try block.
           so, we handle the exception.
 
     catch : if try block find the exception then only catch block execute.

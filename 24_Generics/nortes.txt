@@ -5,10 +5,10 @@
     Reference of parent class can assign a object of child class.
 
     But, REference of Child class can not assign a Object of Parent class directly.
-    We can assign it throough Typecasting.
+    We can assign it through Typecasting.
     
 
-    When we require to store object of same type in single collection 
+    When we require to store object of same type in single collection. 
     then use Generics.
 
 ~> How to create Generics :

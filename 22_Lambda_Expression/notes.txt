@@ -46,11 +46,11 @@
 
     Instance variable can access and modify by LE.
 
-    When any methods have FunxtionalInterface as parameter then we will pass to this method as LambdaExpression.
+    When any methods have FunctionalInterface as parameter then we will pass to this method as LambdaExpression.
 
 ~> Method Reference :
 
-    We set Lambda Expression to other method Refernce using scope resolution (::) Operator.
+    We set Lambda Expression to other method Reference using scope resolution (::) Operator.
 
     Ex:
 
@@ -64,7 +64,7 @@
         {
             StringBuffer sb = new StringBuffer(str);
             sb.reverse();
-            Syste,.out.println(str);
+            System.out.println(str);
         }
         public static void main(String[] args)
         {
@@ -76,6 +76,6 @@
     Here, when we run this code, it returns reverse of given String.
     Because we pass method refernce of reverse of LambdaDemo to MyLambda.
 
-    We can also refernce to constructor using clasname::new.
+    We can also reference to constructor using classname::new.
 
     It is work like Polymorphism.

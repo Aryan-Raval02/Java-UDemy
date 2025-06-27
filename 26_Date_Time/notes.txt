@@ -9,7 +9,7 @@
 
 ~> Joda Date and Time API :
 
-    Old Date and Time Class are use toghether with milli seconds.
+    Old Date and Time Class are use together with milli seconds.
     Date and Time we get together when we call date.
 
     New Joda API has separate for Date, Time and DateTime.
@@ -19,7 +19,7 @@
             LocalDateTime
 
     This classes are represents time in Seconds and Nano Seconds.
-    Tis classes are Immutable.
+    This classes are Immutable.
     But Whenever we change value than return new Object of correspond.
     This classes have not support to TimeZone.
 
@@ -58,4 +58,4 @@
     s - seconds
     S - milliseconds
     z - timeZone
-    Z - Offse
+    Z - Offset

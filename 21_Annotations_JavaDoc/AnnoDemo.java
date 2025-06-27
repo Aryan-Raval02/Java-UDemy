@@ -1,14 +1,14 @@
-import java.lang.annotations.*;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
-@Retension(RetensionPolicy.CLASS)
-
+@Retention(RetentionPolicy.CLASS)
 @interface MyAnno
 {
     String name();
     String version() default "1.3";
 }
 
-@MyAnno(nam="Aryan")
+@MyAnno(name="Aryan")
 public class AnnoDemo
 {
     int data;

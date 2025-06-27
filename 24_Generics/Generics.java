@@ -83,7 +83,7 @@ public class Generics
         obj.display();
     }
 
-    //In place of Extends we can write super so only those class refernce use which are super of defined.
+    //In place of Extends we can write super so only those class reference use which are super of defined.
     static void fun2(MyArray<? extends Number> obj)
     {
         obj.display();

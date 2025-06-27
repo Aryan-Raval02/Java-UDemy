@@ -29,10 +29,10 @@ public class DateDemo
 
         System.out.println(gc.get(Calendar.LONG_FORMAT));
 
-        TimeZone tz = gc.getTimeZone();
+        // TimeZone tz = gc.getTimeZone();
 
-        System.out.println(tz.getID());
-        System.out.println(tz);
-        System.out.println(tz.getDisplayName());
+        // System.out.println(tz.getID());
+        // System.out.println(tz);
+        // System.out.println(tz.getDisplayName());
     }    
 }

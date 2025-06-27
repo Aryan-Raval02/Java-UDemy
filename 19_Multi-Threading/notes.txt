@@ -21,7 +21,7 @@ Multi - Programming :
 
 
 ~> Thread in Java :
-    Thread Class : When we reuire multi threading in our class then extend Thread class.
+    Thread Class : When we require multi threading in our class then extend Thread class.
     Runnable Interface : When we require multi threading in our class and we extend some other class then implements Runnable interface.
 
     Whenever we use Thread class or Runnable interface , we override run() method.
@@ -41,7 +41,7 @@ Multi - Programming :
        start    run        end
     new -> ready -> running -> terminated
 
-    When Thread is running and we require stop for somtimes or shared reference for some task.
+    When Thread is running and we require stop for sometimes or shared reference for some task.
           wait    notify
     running -> wait -> running
 

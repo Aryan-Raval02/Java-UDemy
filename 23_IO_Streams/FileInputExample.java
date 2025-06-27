@@ -6,8 +6,7 @@ public class FileInputExample
 {
     public static void main(String[] args) 
     {
-        try(FileInputStream fis = new FileInputStream("K:/Test.txt");
-)
+        try(FileInputStream fis = new FileInputStream("K:/Test.txt"))
         {
             
             // byte b[] = new byte[fis.available()];

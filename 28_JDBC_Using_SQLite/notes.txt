@@ -33,14 +33,14 @@
 
     Relation : 
         A Relation is a table in a Relational Database.
-        Relation= Table
+        Relation = Table
 
         We have one table as Student.
         Then, Student is relation.
 
     Record :
         Top of table we find description of table. This Known as Schema of table.
-        Baased on this Schema we insert records into table.
+        Based on this Schema we insert records into table.
         Record means data in row(tuple) related to Schema of Table.
 
     Field :
@@ -112,7 +112,7 @@
 
         Driver          : 
             Java Program and Database Program are written in different language so directly connection not establish.
-            we ahve to use Driver to build connection to two different language based program.
+            we have to use Driver to build connection to two different language based program.
             Driver has some methods and APIs are used to establish connection.
             Driver conversion of data type.
 
@@ -147,16 +147,16 @@
 ~> java.sql Package :
 
     DriverManager :
-        It is used for establishing connection between java and databse.
+        It is used for establishing connection between java and database.
         It will utilise JDBC driver. 
         Class.forName() create object on fly. not available in program but it with JVM.
 
     Connection : 
-        Through Driver Manager we will get conncetion of JDBC Driver and Databse using Path of Database.
-        Connection Object is used to cretae Statement.
+        Through Driver Manager we will get conncetion of JDBC Driver and Database using Path of Database.
+        Connection Object is used to create Statement.
         commit() is used to save modify table into database.
         close() is used to close conncetion.
-        setAutoCommit() is used to ay=utomatic commit when DML is execute.
+        setAutoCommit() is used to automatic commit when DML is execute.
 
     ResultSet :
         When we require to execute query and store result then use ResultSet Object.

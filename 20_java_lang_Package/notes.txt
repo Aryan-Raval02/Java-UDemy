@@ -27,9 +27,9 @@
         Integer n = m; // Autoboxing
         Integer n = Integer.valueOf(m); // Boxing
 
-        int p = n; // Auto Unboxing
+        int p = n; // AutoUnboxing
 
-        int p= n.intValue(); // Unboxing
+        int p = n.intValue(); // Unboxing
 
     2. java.lang.FLoat :
         float a = 12.5f;
@@ -71,4 +71,4 @@
     java has package like java.lang.reflect;
     Using this, we can travel through any classes.
 
-    like, Members of class, COnstructors of Class, etc.
+    like, Members of class, Constructors of Class, etc.
